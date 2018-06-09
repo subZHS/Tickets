@@ -14,12 +14,12 @@
     clear: both;
     height: 0;
 }
-.demo{width:950px; margin:40px auto 0 auto}
+.demo{width:950px; max-height: 650px; margin:40px auto 0 auto}
 .clearfix .input{border:1px solid #ccc;padding:0 5px;width:220px; height: 26px;line-height: 26px;}
 
 /*与座位有关的css*/
 .front{width: 400px;margin: 0px 32px 30px 50px;background-color: #f0f0f0;	color: #666;text-align: center;border-radius: 5px;}
-.booking_area {float: right;position: relative;width: 300px;height: 580px; }
+.booking_area {float: right;position: relative;width: 350px;height: 580px; }
 .booking_area h3 {margin: 5px 5px 0 0;font-size: 16px;}
 .booking_area p{line-height:26px; font-size:16px; color:#999}
 .booking_area p span{color:#666}
@@ -31,7 +31,7 @@ div.seatCharts-seat.focused {background-color: #76B474;border: none;}
 div.seatCharts-seat.selected {background: url("/resources/images/selected.png");background-size:32px 32px;color: transparent }
 div.seatCharts-seat.unavailable {background: url("/resources/images/unavailable.png");background-size:32px 32px;color: transparent ;cursor: not-allowed;}
 div.seatCharts-container {border-right: 1px dotted #adadad;width: 550px;padding: 20px;float: left;}
-div.seatCharts-legend {padding-left: 0px;position: absolute;bottom: 16px;}
+div.seatCharts-legend {padding-left: 40px;position: absolute;bottom: 80px;}
 ul.seatCharts-legendList {padding-left: 0px;}
 .seatCharts-legendItem{float:left; width:90px;margin-top: 10px;line-height: 2;}
 span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
@@ -39,3 +39,26 @@ span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
 #seats_chose {max-height: 150px;overflow-y: auto;overflow-x: none;width: 200px;}
 #seats_chose li{float:left; width:72px; height:26px; line-height:26px; border:1px solid #d3d3d3; background:#f7f7f7; margin:6px; font-size:14px; font-weight:bold; text-align:center}
 
+#div-showTips {
+    width: 350px;
+    height: 240px;
+}
+#show-left{
+    max-width: 150px;
+    float: left;
+}
+#show-right{
+    max-width: 200px;
+    float: right;
+}
+.span-moneyTag{
+    font-size: 25px;
+    color: orange;
+}
+.span-money{
+    font-size: 18px;
+    /*color: darkblue;*/
+}
+#total_price,#noSeat_price{
+    font-size: 24px;
+}

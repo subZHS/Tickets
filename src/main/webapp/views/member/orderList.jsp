@@ -52,6 +52,8 @@
                 </ul>
             </div>
         </div>
+        <%--和下面空点距离--%>
+        <br>
 
         <div class="table_list" style="border-top:none">
             <div class="agile_featured_movies">

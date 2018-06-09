@@ -131,11 +131,12 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
 
 <%if(orderState1==OrderState.WaitCheck){%>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
-    <a href="javascript:;" onclick="$('#myModal').modal('show');" class="btn btn-primary col-md-offset-10">去退款</a>
+    <%--对调"去退款"和"返回"按钮样式--%>
+    <a href="javascript:;" onclick="$('#myModal').modal('show');" class="btn btn-default col-md-offset-10">去退款</a>
 </div>
 <%}%>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
-    <a href="/member/j${sessionScope.member.memberid}/orderList?orderState=All" class="btn btn-default col-md-offset-10">返回</a>
+    <a href="/member/j${sessionScope.member.memberid}/orderList?orderState=All" class="btn btn-primary col-md-offset-10">返回</a>
 </div>
 
 <!-- 模态框（Modal） -->

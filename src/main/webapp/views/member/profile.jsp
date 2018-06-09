@@ -61,8 +61,9 @@
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label for="sex" style="margin-right: 3%">性别</label>
-                    <select id="sex" style="width: 30%;height: 30px;border-radius: 6%">
+                    <label for="sex" style="margin-right: 3%">性别</label><br>
+                    <%--拉长性别选择框长度--%>
+                    <select id="sex" style="width: 50%;height: 30px;border-radius: 6%">
                         <%
                             Member member=(Member)session.getAttribute("member");
                         %>
