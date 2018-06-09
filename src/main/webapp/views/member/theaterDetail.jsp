@@ -22,7 +22,7 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
-<div class="bottom_text"><div class="col-md-offset-4 col-md-4"><span>${theater.name}</span></div></div>
+<div class="bottom_text"><span style="margin-left: 38.4%;color: #1b6d85;font-size:28px ">${theater.name}</span></div>
 <br/>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
     <div class="container">
@@ -30,8 +30,8 @@
             <div class="col-md-6">
                 <img style="float: right;height: 200px" src="${theater.image}">
             </div>
-            <div class="col-md-6">
-                <div>
+            <div class="col-md-6" style="display: table;height: 200px">
+                <div style="display: table-cell;vertical-align: middle">
                     <h4></h4>
                     <div class="row">
                     <ul class="col-md-1" style="line-height: 35px">

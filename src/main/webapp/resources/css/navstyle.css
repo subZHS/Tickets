@@ -136,7 +136,7 @@ border:1px solid #ccc; -webkit-box-shadow: 0 0 2px #ccc; -webkit-border-radius:5
 
 
 .bottom_text{ width:1200px; height:1px; background:#ccc; margin:40px auto 20px; position:relative;}
-.bottom_text span{ font:24px "微软雅黑"; font-weight:bolder; color:#459bdc; width:145px; background:#fff; line-height:40px; position:absolute; top:-20px; left:20px; text-align:center;}
+.bottom_text span{ font:24px "微软雅黑"; font-weight:bolder; color:#459bdc; width:20%; background:#fff; line-height:40px; position:absolute; top:-20px; left:20px; text-align:center;}
 .bottom_text i{ list-style:none; font:24px "微软雅黑"; font-weight:bolder; color:#aaa;width:145px; background:#fff; line-height:40px; position:absolute; top:-20px; left:160px; text-align:center;}
 
 .bottom_head{ width:1200px; margin:20px auto; padding:0; height:230px; overflow:hidden;}
