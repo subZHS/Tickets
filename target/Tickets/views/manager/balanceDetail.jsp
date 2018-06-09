@@ -67,7 +67,7 @@
                     <div class="row form-group">
                         <div class="col-md-12">
                             <label class="col-md-4">场馆</label>
-                            <label class="col-md-8"><a style="padding:0;margin: 0" href="/public/theater/j${theater.theaterid}" class="btn btn-link">${theater.name}</a>
+                            <label class="col-md-8"><a style="padding:0;margin: 0" href="/publish/theater/j${theater.theaterid}" class="btn btn-link">${theater.name}</a>
                                 (收款账号：${theater.alipayid})
                             </label>
                         </div>

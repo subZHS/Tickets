@@ -75,7 +75,7 @@
                                     %>
                                     <tr>
                                         <td><input class="showid_hide" type="hidden" value="<%=show.getShowid()%>">
-                                            <a href="/public/theater/j<%=theaterId%>/show/j<%=show.getShowid()%>"><img src="<%=show.getImage()%>" style="width:90px;float:left;margin-right: 10px" alt="" />
+                                            <a href="/publish/theater/j<%=theaterId%>/show/j<%=show.getShowid()%>"><img src="<%=show.getImage()%>" style="width:90px;float:left;margin-right: 10px" alt="" />
                                                 <h5 style="margin-top: 20px"><%=show.getTitle()%></h5></a>
                                             <span>(<%=showTypeStr%>)</span>
                                             <a href="/public/theater/j<%=theaterId%>" class="btn btn-link" style="padding: 0"><%=theaterName%></a><br/>
