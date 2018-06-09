@@ -1,4 +1,4 @@
 
-.idea/
+.idea/*
 src/main/resources/META-INF/applicationContext.xml
-target/
+target/*
