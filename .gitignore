@@ -12,3 +12,7 @@ src/main/resources/META-INF/applicationContext.xml
 .idea/misc.xml
 .idea/dataSources.xml
 .idea/dataSources.local.xml
+.idea/misc.xml
+.idea/workspace.xml
+src/main/resources/META-INF/applicationContext.xml
+src/main/resources/META-INF/spring-servlet.xml
