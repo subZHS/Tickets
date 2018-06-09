@@ -1,3 +1,4 @@
 
-.idea/workspace.xml
-.idea/vcs.xml
+.idea/*
+src/main/resources/META-INF/applicationContext.xml
+target/*
