@@ -10,9 +10,9 @@
     <li class="dropdown">
         <a onclick="window.location.href='/member/j${sessionScope.member.memberid}/profile'" data-toggle="dropdown">基本信息</a>
     </li>
-    <li class="dropdown">
-        <a onclick="window.location.href='/logout'" data-toggle="dropdown">退出登录</a>
-    </li>
+    <%--<li class="dropdown">--%>
+        <%--<a onclick="window.location.href='/logout'" data-toggle="dropdown">退出登录</a>--%>
+    <%--</li>--%>
 </ul>
 
 <script>
