@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div class="bottom_text"><span>演出选座</span></div>
+<div id="show_part" class="bottom_text"><span>演出</span></div>
 <br/>
 <%List<Show> showList = (List<Show>)request.getAttribute("showList");
 if(showList.size()==0){%>
@@ -98,10 +98,10 @@ if(showList.size()==0){%>
                         <b>${show.title}</b></h4>
                     <div class="row">
                         <ul class="col-md-2" style="line-height: 30px">
-                            <li>类型：</li>
-                            <li>参演人员：</li>
-                            <li>价格：</li>
-                            <li>简介：</li>
+                            <li>类&emsp;&emsp;型 ：</li>
+                            <li>参演人员 ：</li>
+                            <li>价&emsp;&emsp;格 ：</li>
+                            <li>简&emsp;&emsp;介 ：</li>
                         </ul>
                         <ul class="col-md-10" style="line-height: 30px;position: relative;left: -3%">
                             <li>${showTypeStr}</li>
@@ -163,5 +163,9 @@ if(showList.size()==0){%>
     </div>
 </div>
 <%}%>
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
 </body>
 </html>

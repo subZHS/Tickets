@@ -6,7 +6,7 @@
         <div class="logo"><img src="/resources/images/logo.png" width="auto" height="100%" /></div>
         <div class="nav">
             <ul>
-                <li class="index"><a href="/login">首页</a></li>
+                <li class="index"><a href="/views/home.jsp">首页</a></li>
                 <li><a href="/publish/showList?isOpen=true&showType=All&orderType=heat">演出</a></li>
                 <li><a href="/publish/theaterList?orderType=heat">场馆</a></li>
                 <!--<li><a href="#" class="text-bj nav-120">学习</a>

@@ -163,9 +163,11 @@ public class ShowDaoImpl implements ShowDao
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String date=dateFormat.format(datetime);
             //取出已过当前时间的show
-            String hql = "SELECT * FROM `show` s WHERE s.title LIKE :keyword OR s.actor LIKE :keyword OR s.description LIKE :keyword";
+            String hql = "SELECT * FROM `show` s WHERE (s.title LIKE :keyword OR s.actor LIKE :keyword OR s.description LIKE :keyword)" +
+                    "AND EXISTS ( SELECT * FROM showtime st WHERE s.showid=st.showid AND CONCAT(st.date,' ',st.time) >= :date)";
             Query query=session.createNativeQuery(hql).addEntity("s",Show.class);
             query.setParameter("keyword","%"+key+"%");
+            query.setParameter("date",date);
             shows=query.list();
             if(shows.size()>5){
                 for(int i=5;i<shows.size();i++){

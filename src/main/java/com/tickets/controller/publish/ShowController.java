@@ -35,6 +35,11 @@ public class ShowController {
     @Autowired
     OrderService orderService;
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String homePage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
+        return "home";
+    }
+
     @RequestMapping(value = "/showList", method = RequestMethod.GET)
     public String publishShowListPage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
         modelMap.addAttribute("isOpen",request.getParameter("isOpen"));

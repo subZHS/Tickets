@@ -66,7 +66,10 @@ public class TheaterController {
             Collections.sort(minPriceTheaterMapList, new Comparator<Map.Entry<String, Double>>() {
                 public int compare(Map.Entry<String, Double> o1, Map.Entry<String, Double> o2) {
                     if(o1.getValue()<0){
-                        return 1;
+                        return 1;// 返回值为int类型，大于0表示正序，小于0表示逆序
+                    }
+                    if(o2.getValue()<0){
+                        return -1;
                     }
                     return o1.getValue().compareTo(o2.getValue());
                 }

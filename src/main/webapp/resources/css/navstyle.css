@@ -95,8 +95,8 @@ border:1px solid #ccc; -webkit-box-shadow: 0 0 2px #ccc; -webkit-border-radius:5
 
 .main_nav li:hover a{background:#459bdc; color:#fff;}
 
-.banner{ width:1200px; margin:0px auto 20px; padding:25px 0 0 0; height:auto; overflow:hidden; position:relative; border-top:1px solid #ccc;}
-.banner ul{ width:100%; height:100%; margin:0; padding:0;}
+.banner{ width:1200px; margin:0px auto 20px; padding:25px 0 0 0; overflow:hidden; position:relative; border-top:1px solid #ccc;}
+.banner ul{ width:100%; margin:0; padding:0;}
 .banner li{ list-style:none; width:200px; float:left; height:332px; -webkit-box-shadow:0 0 10px #ccc; margin:0px 50px 80px 0; position:relative;}
 .main_text{ width:200px; height:0px; overflow:hidden; position:absolute; top:0; left:0; background:#000; opacity:0.8;color:#fff; font:14px "微软雅黑"; -webkit-transition:all 0.5s;}
 .banner li:hover .main_text{ height:276.5px;}
@@ -116,12 +116,12 @@ border:1px solid #ccc; -webkit-box-shadow: 0 0 2px #ccc; -webkit-border-radius:5
 .name{ width:auto; height:30px; line-height:30px; text-align:center; font:15px "微软雅黑"; font-weight:600; color:#333;}
 .main_bottom{ width:100%; height:30px; margin:0; padding:0; float:left;}
 .main_bottom span{padding-left:28px; color:#333; font:12px "微软雅黑"; line-height:35px;}
-.main_bottom span:nth-child(1){ background: url(/resources/images/withs.png) no-repeat left center;}
+.main_bottom span:nth-child(1){ background: url(/resources/images/seat.png) no-repeat left center;background-size: 18px;}
 .main_bottom span:nth-child(2){ background: url(../images/replys.png) no-repeat left center;}
 .main_bottom span:nth-child(3){ background: url(../images/praises.png) no-repeat left center;}
 .main_bottom a{ float:right; font:12px "微软雅黑"; color:#666; line-height:35px;}
 
-.banner_bottom{ width:450; height:40px; margin:0px auto; padding:0;}
+.banner_bottom{ width:450px; height:40px; margin:0px auto; padding:0;}
 .banner_bottom ul{ width:100%; height:100%; float:left;margin:0; padding:0;}
 .banner_bottom li{ width:40px; height:40px; float:left; margin: 0 10px 0 0; position:relative; background:#cce; text-align:center; -webkit-transition:all 0.5s;}
 .banner_bottom li a{ color:#666; line-height:40px; display:block;}

@@ -72,9 +72,13 @@
                                     <span>电话：<%=theater.getPhonenum()%></span></td>
                                 <td><%=heatTheaterMap.get(theater.getTheaterid())%></td>
                                 <td><%=showNumTheaterMap.get(theater.getTheaterid())%></td>
+                                    <%if(minPriceTheaterMap.get(theater.getTheaterid())>0){%>
                                 <td style="font-size: 25px;font-family: georgia;color: #C9302C;">¥<%=minPriceTheaterMap.get(theater.getTheaterid())%></td>
+                                    <%}else{%>
+                                <td>暂无</td>
+                                    <%}%>
                                 <td>
-                                    <a href="/publish/theater/j<%=theater.getTheaterid()%>" class="btn btn-link">进入-></a>
+                                    <a href="/publish/theater/j<%=theater.getTheaterid()%>" class="btn btn-primary">选座</a>
                                 </td>
                             </tr>
                             <%}%>
@@ -88,6 +92,9 @@
 
     </div>
 </div>
-
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
 </body>
 </html>
