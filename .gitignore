@@ -1,0 +1,15 @@
+
+.idea/*
+src/main/resources/META-INF/applicationContext.xml
+target/*
+target/Tickets/WEB-INF/classes/META-INF/applicationContext.xml
+target/Tickets/views/manager/balanceList.jsp
+target/Tickets/META-INF/MANIFEST.MF
+target/Tickets.war
+target/classes/META-INF/applicationContext.xml
+.idea/workspace.xml
+.idea/misc.xml
+.idea/
+src/main/resources/META-INF/spring-servlet.xml
+target/
+out/
