@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -78,8 +79,9 @@ public class BuyTicketsController {
         String memberid = ((Member)request.getSession().getAttribute("member")).getMemberid();
         int couponType = Integer.valueOf(request.getParameter("couponType"));
         List<OrderSeat> orderSeatList=transformOrderSeatFromString(request.getParameter("seats"));
-
-        return orderService.calculatePrice(showtimeid,orderSeatList.size(), orderSeatList,memberid,couponType);
+        DecimalFormat df = new DecimalFormat( "0.0");
+        Double price=Double.parseDouble(df.format(orderService.calculatePrice(showtimeid,orderSeatList.size(), orderSeatList,memberid,couponType)));
+        return price;
     }
 
     @RequestMapping(value = "/j{memberid}/buyTickets/j{showtimeid}/submitSeatOrder", method = RequestMethod.POST)
@@ -118,8 +120,9 @@ public class BuyTicketsController {
         String memberid = ((Member)request.getSession().getAttribute("member")).getMemberid();
         int couponType = Integer.valueOf(request.getParameter("couponType"));
         int number = Integer.valueOf(request.getParameter("number"));
-
-        return orderService.calculatePrice(showtimeid,number, null,memberid,couponType);
+        DecimalFormat df = new DecimalFormat( "0.0");
+        Double price=Double.parseDouble(df.format(orderService.calculatePrice(showtimeid,number, null,memberid,couponType)));
+        return price;
     }
 
     @RequestMapping(value = "/j{memberid}/buyTickets/j{showtimeid}/submitNoSeatOrder", method = RequestMethod.POST)

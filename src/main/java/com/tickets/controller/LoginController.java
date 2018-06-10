@@ -38,6 +38,16 @@ public class LoginController {
     @Autowired
     ManagerService managerService;
 
+    @RequestMapping(value = "/checkMemberLogined", method = RequestMethod.GET)
+    @ResponseBody
+    public boolean checkMemberLogined(HttpServletRequest request, HttpServletResponse response){
+        if(request.getSession().getAttribute("member")==null){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
     @RequestMapping(value = "/Login", method = RequestMethod.GET)
     public void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String login="";

@@ -147,7 +147,7 @@ if(showList.size()==0){%>
                                           购票结束
                                         <%}else{
                                     %>
-                                    <a href="/member/j${sessionScope.member.memberid}/buyTickets/j<%=showTime.getShowtimeid()%>" class="btn btn-primary">购票</a>
+                                    <a href="javascript:;" onclick="buyTicket($(this))" data-href="/member/j${sessionScope.member.memberid}/buyTickets/j<%=showTime.getShowtimeid()%>" class="btn btn-primary">购票</a>
                                     <%}}else{%>
                                     暂未开票
                                     <%}%>
@@ -167,5 +167,22 @@ if(showList.size()==0){%>
 <jsp:include page="/views/bottomLine.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
+<script>
+    function buyTicket(a) {
+        $.ajax({
+            type: 'get', url: '/checkMemberLogined',
+            data: {},
+            cache: false, dataType: 'json',
+            success: function (logined) {
+                if(!logined){
+                    alert("请先以会员身份登录");
+                    window.location.href="/login";
+                }else{
+                    window.location.href=a.data("href");
+                }
+            }
+        });
+    }
+</script>
 </body>
 </html>
