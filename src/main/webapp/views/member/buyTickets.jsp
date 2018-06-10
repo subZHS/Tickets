@@ -20,156 +20,174 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
-<div id="step" style="	width: 1000px;	margin: 20px auto;margin-bottom: 30px;"></div>
+<div id="div-notBottom" style="min-height: 1080px">
+    <div id="step" style="	width: 1000px;	margin: 20px auto;margin-bottom: 30px;"></div>
 
-<div style="width: 1000px;margin: 0 auto 40px;">
-    <label>购票方式：&nbsp;&nbsp;</label>
-    <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary active">
-            选座购买
-        </label>
-        <label class="btn btn-primary">
-            不选座购买
-        </label>
+    <div style="width: 1000px;margin: 0 auto 40px;">
+        <label>购票方式：&nbsp;&nbsp;</label>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                选座购买
+            </label>
+            <label class="btn btn-primary">
+                不选座购买
+            </label>
+        </div>
     </div>
-</div>
 
-<div id="choose_seat" class="demo clearfix" style="height: 750px">
-    <!---左边座位列表----->
-    <div id="seat_area" style="max-height: 650px;overflow:auto">
-        <div class="front">屏幕</div>
-        <div id="legend"></div>
+    <div id="choose_seat" class="demo clearfix" style="height: 750px">
+        <!---左边座位列表----->
+        <div id="seat_area" style="max-height: 650px;overflow:auto">
+            <div class="front">屏幕</div>
+            <div id="legend"></div>
+        </div>
+        <!---右边选座信息----->
+        <div class="booking_area" >
+            <%--更改买票界面右边提示样式--%>
+            <div id="div-showTips">
+                <div id="show-left">
+                    <img src="${show.image}" width="150px" style="margin-bottom: 10px"/>
+                </div>
+                <div id="show-right">
+                    <br>
+                    <p>电影：<span>${show.title}</span></p>
+                    <p>时间：<span>${dateTime}</span></p>
+                    <p>票价：
+                    <div style="font-size: 15px"><span>1 - ${divide1-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price1}</span></span><br/><span>${divide1} - ${divide2-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price2}</span></span>
+                        <br/><span>${divide2} - *排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price3}</span></span></div>
+                    </p>
+                </div>
+            </div>
+
+            <p>座位：</p>
+            <ul id="seats_chose"></ul>
+            <p>票数：(限6张) &nbsp;<span id="tickects_num">0</span></p>
+            <p>会员等级优惠: <span style="font-size: 25px;font-family: georgia;color: #C9302C;">${discount*10}</span> 折</p>
+            <p style="margin-bottom: 0;padding-bottom:0"><label>优惠券:</label></p>
+            <div>
+                <select id="coupon_select" onchange="calculateSeatOrderPrice(getSeats())"
+                        style="width: 100%;height: 40px;line-height: 50px;border-radius: 6%">
+                    <%Member member = (Member) request.getSession().getAttribute("member");%>
+                    <option value="0">未使用</option>
+                    <option value="1" <%if((member.getCoupon1()==0)){%>disabled<%}%> >优惠券1:满10减1</option>
+                    <option value="2" <%if((member.getCoupon2()==0)){%>disabled<%}%> >优惠券2:满30减5</option>
+                    <option value="3" <%if((member.getCoupon3()==0)){%>disabled<%}%> >优惠券3:满50减10</option>
+                </select>
+            </div>
+            <p><a target="_blank" href="/member/j${sessionScope.member.memberid}/coupon" class="btn btn-link"
+                  style="outline: none;margin-top: 10px;padding-top:0">>>获取优惠券>></a></p>
+            <p>总价：<b><span class="span-moneyTag">¥</span><span id="total_price">0</span></b></p>
+            <input type="button" class="btn btn-primary" onclick="submitSeatOrder(getSeats())" value="确定购买"
+                   style="margin-top: 10px;margin-left: 250px"/>
+        </div>
     </div>
-    <!---右边选座信息----->
-    <div class="booking_area" >
-        <%--更改买票界面右边提示样式--%>
-        <div id="div-showTips">
-            <div id="show-left">
-                <img src="${show.image}" width="150px" style="margin-bottom: 10px"/>
-            </div>
-            <div id="show-right">
-                <br>
-                <p>电影：<span>${show.title}</span></p>
-                <p>时间：<span>${dateTime}</span></p>
-                <p>票价：
-                <div style="font-size: 15px"><span>1 - ${divide1-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price1}</span></span><br/><span>${divide1} - ${divide2-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price2}</span></span>
-                    <br/><span>${divide2} - *排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price3}</span></span></div>
-                </p>
-            </div>
-        </div>
 
-        <p>座位：</p>
-        <ul id="seats_chose"></ul>
-        <p>票数：(限6张) &nbsp;<span id="tickects_num">0</span></p>
-        <p>会员等级优惠: <span style="font-size: 25px;font-family: georgia;color: #C9302C;">${discount*10}</span> 折</p>
-        <p style="margin-bottom: 0;padding-bottom:0"><label>优惠券:</label></p>
-        <div>
-            <select id="coupon_select" onchange="calculateSeatOrderPrice(getSeats())"
-                    style="width: 100%;height: 40px;line-height: 50px;border-radius: 6%">
-                <%Member member = (Member) request.getSession().getAttribute("member");%>
-                <option value="0">未使用</option>
-                <option value="1" <%if((member.getCoupon1()==0)){%>disabled<%}%> >优惠券1:满10减1</option>
-                <option value="2" <%if((member.getCoupon2()==0)){%>disabled<%}%> >优惠券2:满30减5</option>
-                <option value="3" <%if((member.getCoupon3()==0)){%>disabled<%}%> >优惠券3:满50减10</option>
-            </select>
-        </div>
-        <p><a target="_blank" href="/member/j${sessionScope.member.memberid}/coupon" class="btn btn-link"
-              style="outline: none;margin-top: 10px;padding-top:0">>>获取优惠券>></a></p>
-        <p>总价：<b><span class="span-moneyTag">¥</span><span id="total_price">0</span></b></p>
-        <input type="button" class="btn btn-primary" onclick="submitSeatOrder(getSeats())" value="确定购买"
-               style="margin-top: 10px;margin-left: 250px"/>
+    <div id="not_choose" style="display: none;width: 1200px;margin: 0 auto;">
+        <form action="#" class="col-md-offset-2 col-md-8">
+
+            <div id="div-showTipsNot">
+                <div id="show-leftNot">
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="col-md-2"></label>
+                            <div class="col-md-10">
+                                <img src="${show.image}" width="150px"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="show-rightNot" style="font-size: 16px;">
+                    <br>
+                    <p>电影&emsp;<span style="font-size: 20px;color: #459bdc;">${show.title}</span></p>
+                    <p>时间&emsp;<span>${dateTime}</span></p>
+                    <p>票价&emsp;<span>1 - ${divide1-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price1}</span></span><br/>
+                        &emsp;&emsp;&emsp;<span>${divide1} - ${divide2-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price2}</span></span><br/>
+                        &emsp;&emsp;&emsp;<span>${divide2} - *排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price3}</span></span>
+                    </p>
+                    <%--
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="col-md-2">电影</label>
+                            <label class="col-md-10"><span style="font-size: 20px;color: #459bdc;">${show.title}</span></label>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="col-md-2">时间</label>
+                            <label class="col-md-10">${dateTime}</label>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="col-md-2">票价</label>
+                            <label class="col-md-10">
+                                <div style="font-size: 15px">
+                                    <span>1 - ${divide1-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price1}</span></span><br/><span>${divide1} - ${divide2-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price2}</span></span>
+                                    <br/><span>${divide2} - -排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price3}</span></span></div>
+                            </label>
+                        </div>
+                    </div>
+                    --%>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label class="col-md-2">票&emsp;&emsp;&emsp;&emsp;数</label>
+                    <div class="col-md-6">
+                        <input id="noSeat_ticketNum" oninput="if($(this).val()==''){return;};calculateNoSeatOrderPrice()"
+                               type="number" class="form-control" value="1" min="1" max="20">
+                    </div>
+                    <label class="col-md-4">（限20张）</label>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label class="col-md-2">会员等级优惠</label>
+                    <div class="col-md-2">
+                        <span style="font-size: 25px;font-family: georgia;color: #C9302C;">${discount*10}</span>
+                    </div>
+                    <label class="col-md-2">折</label>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label class="col-md-2">优&emsp;&nbsp;惠&emsp;&nbsp;&nbsp;券</label>
+                    <div class="col-md-6">
+                        <select id="noSeat_coupon" onchange="calculateNoSeatOrderPrice()"
+                                style="width: 100%;height: 40px;line-height: 50px;border-radius: 6%">
+                            <option value="0">未使用</option>
+                            <option value="1" <%if((member.getCoupon1()==0)){%>disabled<%}%> >优惠券1:满10减1</option>
+                            <option value="2" <%if((member.getCoupon2()==0)){%>disabled<%}%> >优惠券2:满30减5</option>
+                            <option value="3" <%if((member.getCoupon3()==0)){%>disabled<%}%> >优惠券3:满50减10</option>
+                        </select>
+                    </div>
+                    <button target="_blank" href="/member/j${sessionScope.member.memberid}/coupon"
+                            class="col-md-2 btn btn-link" style="outline: none">>>获取优惠券>>
+                    </button>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label class="col-md-2">总&emsp;&emsp;&emsp;&emsp;价</label>
+                    <label class="col-md-10"><span style="font-size: 25px;font-family: georgia;color: #C9302C;"><span class="span-moneyTag">¥</span><span
+                            id="noSeat_price">0</span></span><span style="color: grey">（每张票是所有价位的最低价）</span></label>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <a href="javascript:;" onclick="submitNoSeatOrder()" class="btn btn-primary" style="margin-left: 400px">确定购买</a>
+                </div>
+            </div>
+        </form>
     </div>
-</div>
-
-<div id="not_choose" style="display: none;width: 1200px;margin: 0 auto;">
-    <form action="#" class="col-md-offset-2 col-md-8">
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2"></label>
-                <div class="col-md-10">
-                    <img src="${show.image}" width="150px"/>
-                </div>
-            </div>
+    <div class="col-md-12" style="z-index: -1">
+        <div id="info" style="width: 900px;margin: 0 190px 100px auto;">
+            <p>特别提示：</p>
+            <p>1、下单前请仔细核对演出、场馆、场次等信息。</p>
+            <p>2、下单后请于15分钟内完成支付，超时系统将不保留座位。</p>
+            <p>3、选座购买每笔订单最多可以选择6个座位，立即购买每单最多选20个座位。</p>
+            <p>4、选座购买有前排、中间、靠后这三种不同价位的座位，立即购买的每张票按选座购买的最低价收费。</p>
         </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">电影</label>
-                <label class="col-md-10"><span style="font-size: 20px;color: #459bdc;">${show.title}</span></label>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">时间</label>
-                <label class="col-md-10">${dateTime}</label>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">票价</label>
-                <label class="col-md-10">
-                    <div style="font-size: 15px">
-                        <span>1 - ${divide1-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price1}</span></span><br/><span>${divide1} - ${divide2-1}排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price2}</span></span>
-                        <br/><span>${divide2} - -排：<span class="span-moneyTag">¥</span><span class="span-money">${show.price3}</span></span></div>
-                </label>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">票数</label>
-                <div class="col-md-6">
-                    <input id="noSeat_ticketNum" oninput="if($(this).val()==''){return;};calculateNoSeatOrderPrice()"
-                           type="number" class="form-control" value="1" min="1" max="20">
-                </div>
-                <label class="col-md-4">（限20张）</label>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">会员等级优惠</label>
-                <div class="col-md-2">
-                    <span style="font-size: 25px;font-family: georgia;color: #C9302C;">${discount*10}</span>
-                </div>
-                <label class="col-md-2">折</label>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">优惠券</label>
-                <div class="col-md-6">
-                    <select id="noSeat_coupon" onchange="calculateNoSeatOrderPrice()"
-                            style="width: 100%;height: 40px;line-height: 50px;border-radius: 6%">
-                        <option value="0">未使用</option>
-                        <option value="1" <%if((member.getCoupon1()==0)){%>disabled<%}%> >优惠券1:满10减1</option>
-                        <option value="2" <%if((member.getCoupon2()==0)){%>disabled<%}%> >优惠券2:满30减5</option>
-                        <option value="3" <%if((member.getCoupon3()==0)){%>disabled<%}%> >优惠券3:满50减10</option>
-                    </select>
-                </div>
-                <button target="_blank" href="/member/j${sessionScope.member.memberid}/coupon"
-                        class="col-md-2 btn btn-link" style="outline: none">>>获取优惠券>>
-                </button>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <label class="col-md-2">总价</label>
-                <label class="col-md-10"><span style="font-size: 25px;font-family: georgia;color: #C9302C;"><span class="span-moneyTag">¥</span><span
-                        id="noSeat_price">0</span></span><span style="color: grey">（每张票是所有价位的最低价）</span></label>
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-md-12">
-                <a href="javascript:;" onclick="submitNoSeatOrder()" class="btn btn-primary" style="margin-left: 400px">确定购买</a>
-            </div>
-        </div>
-    </form>
-</div>
-<div class="col-md-12" style="z-index: -1">
-    <div id="info" style="width: 900px;margin: 0 190px 100px auto;">
-        <p>特别提示：</p>
-        <p>1、下单前请仔细核对演出、场馆、场次等信息。</p>
-        <p>2、下单后请于15分钟内完成支付，超时系统将不保留座位。</p>
-        <p>3、选座购买每笔订单最多可以选择6个座位，立即购买每单最多选20个座位。</p>
-        <p>4、选座购买有前排、中间、靠后这三种不同价位的座位，立即购买的每张票按选座购买的最低价收费。</p>
     </div>
 </div>
 
