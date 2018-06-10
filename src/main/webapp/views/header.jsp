@@ -3,12 +3,12 @@
 <script src="/resources/js/navanimition.js"></script>
 <header class="top" style="background-color: white">
     <nav>
-        <div class="logo"><img src="/resources/images/logo.png" width="auto" height="100%" /></div>
+        <div class="logo" onclick="window.location.href='/views/home.jsp'"><img src="/resources/images/logo1.png" width="auto" height="100%" /></div>
         <div class="nav">
             <ul>
-                <li class="index"><a href="/views/home.jsp">首页</a></li>
-                <li><a href="/publish/showList?isOpen=true&showType=All&orderType=heat">演出</a></li>
-                <li><a href="/publish/theaterList?orderType=heat">场馆</a></li>
+                <%--<li class="index"><a href="/views/home.jsp">首页</a></li>--%>
+                <li><a style="font-size: 15px" href="/publish/showList?isOpen=true&showType=All&orderType=heat">演出</a></li>
+                <li><a style="font-size: 15px" href="/publish/theaterList?orderType=heat">场馆</a></li>
                 <!--<li><a href="#" class="text-bj nav-120">学习</a>
                     <dl class="nav-120">
                         <dd><a href="#">专题</a><i></i></dd>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="search" onclick="search()"></div>
-            <div class="search_input"><input id="search_input" type="text" placeholder="请输入你要搜索的内容" /></div>
+            <div class="search_input"><input id="search_input" type="text" placeholder="请输入你要搜索的内容" onfocus="listenEnterPress($(this))"/></div>
             <%--<div class="IT"><a href="#" class="text-zp">搜索方向</a>--%>
             <%--<dl>--%>
             <%--<dd><a href="#">演出</a></dd>--%>
@@ -112,13 +112,29 @@
         }
 
         url=window.location.pathname;
-        if(url=="/login"){
+        // if(url=="/login"){
+        //     $(".nav li").eq(0).addClass("index");
+        // }else if(url=="/publish/showList"){
+        //     $(".nav li").eq(1).addClass("index");
+        // }else if(url=="/publish/theaterList"){
+        //     $(".nav li").eq(2).addClass("index");
+        // }
+        if(url=="/publish/showList"){
             $(".nav li").eq(0).addClass("index");
-        }else if(url=="/publish/showList"){
-            $(".nav li").eq(1).addClass("index");
         }else if(url=="/publish/theaterList"){
-            $(".nav li").eq(2).addClass("index");
+            $(".nav li").eq(1).addClass("index");
         }
     });
 </script>
 
+<%--监听键盘回车搜索事件--%>
+<script>
+function listenEnterPress(searchInput) {
+    searchInput.keydown(function(e) {
+        var eCode = e.keyCode ? e.keyCode : e.which ? e.which : e.charCode;
+        if (eCode == 13){
+            $(".search").click();
+        }
+    });
+}
+</script>

@@ -22,7 +22,7 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
-<div class="bottom_text"><span style="margin-left: 38.4%;color: #1b6d85;font-size:28px ">${theater.name}</span></div>
+<div class="bottom_text" style="margin-top: 100px"><span style="margin-left: 38.4%;color: #1b6d85;font-size:28px ">${theater.name}</span></div>
 <br/>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
     <div class="container">
