@@ -35,7 +35,7 @@
 
         </div>
         <section>
-            <div class="head"><a href="#">
+            <div class="head" id="user"><a href="#">
                 <%if(request.getSession().getAttribute("userType")!=null){
                     if(request.getSession().getAttribute("userType").equals("member")){%>
                 <img src="${sessionScope.member.image}" style="width: 49px;height: 49px;border-radius: 100%"/> &nbsp;${sessionScope.member.name}
@@ -137,4 +137,14 @@ function listenEnterPress(searchInput) {
         }
     });
 }
+</script>
+
+<script>
+    document.getElementById("user").onmouseover=function (ev) {
+        $("#user ul").height($("#user ul li").length*40);
+    }
+
+    document.getElementById("user").onmouseleave=function (ev) {
+        $("#user ul").height(0);
+    }
 </script>

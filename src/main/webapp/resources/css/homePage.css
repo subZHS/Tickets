@@ -1,0 +1,30 @@
+.slider-text {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 210px;
+    /*z-index:2;*/
+}
+.slider-text h1 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.slider-text p {
+    color: #fff;
+    padding: 0px 100px ;
+}
+.slider-text li {
+    display: inline-block;
+}
+.slider-text li a {
+    /*background: #212836 none repeat scroll 0 0;*/
+    background: #00c3ff none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 40px;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+.slider-text li:last-child a{background: #00c3ff none repeat scroll 0 0;}
+.slider-text li a:hover{background: #464646 none repeat scroll 0 0;transition: all 0.4s ease 0s;}
