@@ -52,7 +52,9 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
     </div>
 </div>
 <%}%>
-<br/><br/>
+<div id="div-space">
+    <br><br>
+</div>
 <div class="bottom_text" style="margin-top: 10px"><span>订单详情</span></div>
 
 <div class="w3_content_agilleinfo_inner table_list" style="border-top:none">
@@ -81,7 +83,7 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="/publish/theater/j${theaterId}/show/j${show.showid}"><img src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt="" />
+                                <td><a href="/publish/theater/j${theaterId}/show/j${show.showid}#show_part"><img src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt="" />
                                     <h5 style="margin-top: 20px">${show.title}</h5></a>
                                     <a href="/publish/theater/j${theaterId}" class="btn btn-link" style="padding: 0">${theaterName}</a><br/>
                                     <span>${showTimeStr}</span>
@@ -107,7 +109,7 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
                                     <%}%>
                                 </td>
                                 <td>${order.number}</td>
-                                <td>${order.discount}</td>
+                                <td>${order.discount*10}折</td>
                                 <td><%if(order.getCoupontype()==0){%>
                                     未使用
                                     <%}else if(order.getCoupontype()==1){%>
@@ -132,11 +134,11 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
 <%if(orderState1==OrderState.WaitCheck){%>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
     <%--对调"去退款"和"返回"按钮样式--%>
-    <a href="javascript:;" onclick="$('#myModal').modal('show');" class="btn btn-default col-md-offset-10">去退款</a>
+    <a href="javascript:;" onclick="$('#myModal').modal('show');" class="btn btn-default col-md-offset-10" style="width: 80px">去退款</a>
 </div>
 <%}%>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
-    <a href="/member/j${sessionScope.member.memberid}/orderList?orderState=All" class="btn btn-primary col-md-offset-10">返回</a>
+    <a href="/member/j${sessionScope.member.memberid}/orderList?orderState=All" class="btn btn-primary col-md-offset-10" style="width: 80px">返回</a>
 </div>
 
 <!-- 模态框（Modal） -->
@@ -160,9 +162,20 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
     </div><!-- /.modal-dialog -->
 </div>
 
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
+
 <script type="text/javascript">
     var $step = $("#step");
     var $index = $("#index");
+
+    $("#div-space").show();
+    <%if (orderState1 == OrderState.WaitCheck){%>
+    $("#div-space").hide();
+    <%}%>
+
 
     $step.step({
         index: 3,

@@ -17,7 +17,7 @@
 <!-- Bootstrap -->
 <script src="/resources/js/bootstrap.min.js"></script>
 <head>
-    <title>Login</title>
+    <title>Member order list</title>
 </head>
 <body>
 <jsp:include page="/views/header.jsp" flush="true">
@@ -69,7 +69,9 @@
                                 <table id="table-breakpoint">
                                     <thead>
                                     <tr>
+                                        <%--将"下单时间"放到后面--%>
                                         <th>订单信息</th>
+                                        <th>下单时间</th>
                                         <th>订单类型</th>
                                         <th>座位</th>
                                         <th>票数</th>
@@ -93,8 +95,8 @@
                                             <h5 style="margin-top: 20px"><%=show.getTitle()%></h5></a>
                                             <a href="/publish/theater/j<%=theaterId%>" class="btn btn-link" style="padding: 0"><%=theaterName%></a><br/>
                                             <span><%=dateTime%></span>
-                                        <p>下单时间：<%=sdf.format(order.getTime())%></p>
                                         </td>
+                                        <td><%=sdf.format(order.getTime())%></td>
                                         <td><%if(order.isOrdertype()){%>
                                             选座购买
                                             <%}else{%>

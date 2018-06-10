@@ -173,6 +173,11 @@
     </div>
 </div>
 
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
+
 <script type="text/javascript">
     $(".btn-group .btn-primary").click(function () {
         var index = $(this).index(".btn-group .btn-primary");

@@ -63,7 +63,7 @@
                 <div class="col-md-12">
                     <label for="sex" style="margin-right: 3%">性别</label><br>
                     <%--拉长性别选择框长度--%>
-                    <select id="sex" style="width: 50%;height: 30px;border-radius: 6%">
+                    <select id="sex" style="width: 100%;height: 30px;border-radius: 6%">
                         <%
                             Member member=(Member)session.getAttribute("member");
                         %>
@@ -82,7 +82,8 @@
 
             <div class="row form-group">
                 <div class="col-md-12">
-                    <input id="submit_modify" type="submit" class="btn btn-primary" value="修改">
+                    <%--添加css样式--%>
+                    <input id="submit_modify" type="submit" class="btn btn-primary" value="修改" style="float: right;margin: 30px 0 auto  auto;min-width: 100px">
                 </div>
             </div>
         </form>

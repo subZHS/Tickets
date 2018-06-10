@@ -17,7 +17,7 @@
 <!-- Bootstrap -->
 <script src="/resources/js/bootstrap.min.js"></script>
 <head>
-    <title>Login</title>
+    <title>Member order list</title>
 </head>
 <body>
 <jsp:include page="/views/header.jsp" flush="true">
@@ -69,7 +69,9 @@
                                 <table id="table-breakpoint">
                                     <thead>
                                     <tr>
+                                        <%--将"下单时间"放到后面--%>
                                         <th>订单信息</th>
+                                        <th>下单时间</th>
                                         <th>订单类型</th>
                                         <th>座位</th>
                                         <th>票数</th>
@@ -89,12 +91,12 @@
                                             List<OrderSeat> orderSeatList=((List<List<OrderSeat>>)request.getAttribute("orderSeatsList")).get(i);
                                     %>
                                     <tr><td><p>订单号：<label class="orderid"><%=order.getOrderid()%></label></p>
-                                            <a href="/publish/theater/j<%=theaterId%>/show/j<%=show.getShowid()%>"><img src="<%=show.getImage()%>" style="width:90px;float:left;margin-right: 10px" alt="" />
+                                            <a href="/publish/theater/j<%=theaterId%>/show/j<%=show.getShowid()%>#show_part"><img src="<%=show.getImage()%>" style="width:90px;float:left;margin-right: 10px" alt="" />
                                             <h5 style="margin-top: 20px"><%=show.getTitle()%></h5></a>
                                             <a href="/publish/theater/j<%=theaterId%>" class="btn btn-link" style="padding: 0"><%=theaterName%></a><br/>
                                             <span><%=dateTime%></span>
-                                        <p>下单时间：<%=sdf.format(order.getTime())%></p>
                                         </td>
+                                        <td><%=sdf.format(order.getTime())%></td>
                                         <td><%if(order.isOrdertype()){%>
                                             选座购买
                                             <%}else{%>
@@ -159,6 +161,11 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div>
+
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
 
 <script>
     var refundOrderIndex;

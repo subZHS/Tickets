@@ -154,6 +154,11 @@
         </form>
 </div>
 
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
+
 <script type="text/javascript">
     var $step = $("#step");
     var $index = $("#index");

@@ -35,7 +35,8 @@
                                 <div class="w3ls-news-result">
                                     <h4>剩余积分:
                                         <span style="font-family: georgia;color: #C9302C;font-size: 22px"> ${sessionScope.member.points} </span>
-                                        <span style="color: grey">（每消费一次，您的积分会增加 消费金额*10）</span></h4>
+                                        <%--消费金额*10的颜色，使其更明显--%>
+                                        <span style="color: grey">（每消费一次，您的积分会增加<span style="color: orange;">消费金额*10</span>)</span></h4>
                             </div>
                                 <table id="table-breakpoint">
                                     <thead>
@@ -107,6 +108,11 @@
     </div><!-- /.modal-dialog -->
 </div>
 
+<%--底线--%>
+<jsp:include page="/views/bottomLine.jsp" flush="true">
+    <jsp:param name="index" value="0"/>
+</jsp:include>
+
 <script>
     var index;
     var number;
@@ -123,6 +129,8 @@
             cache: false, dataType: 'json',
             success: function (success) {
                 if(success){
+                    //添加兑换成功的提示
+                    alert("兑换成功！");
                     window.location.href="/member/j${sessionScope.member.memberid}/coupon";
                 }else{
                     alert("您的积分不足，兑换失败");
