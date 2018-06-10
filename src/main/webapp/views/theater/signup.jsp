@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/resources/css/animate.css">
 <link  href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link  href="/resources/css/public.css" rel="stylesheet" type="text/css" />
 <!-- jQuery -->
 <script src="/resources/js/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -17,7 +18,7 @@
     <jsp:param name="index" value="0"/>
 </jsp:include>
 
-<div class="container row" style="width: 1200px;margin: 50px auto;">
+<div class="container row" style="width: 1200px;">
 
     <div class="col-md-offset-2 col-md-8">
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>注册场馆</span></div>
