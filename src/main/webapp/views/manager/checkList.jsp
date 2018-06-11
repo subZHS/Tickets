@@ -80,7 +80,7 @@
                                     <tr>
                                         <td><p>场馆号：<label class="theaterid"><%=theater.getTheaterid()%></label></p>
                                             <div style="min-height: 140px;float: left;margin-right: 10px">
-                                            <img src="<%=theater.getImage()%>" style="width:90px" alt="" /></div>
+                                            <img src="<%=theater.getImage()%>" style="width:90px;margin-top:20px" alt="" /></div>
                                         </td>
                                         <td><h5 style="margin-top: 20px"><%=theater.getName()%></h5>
                                             <span>邮箱：<%=theater.getEmail()%></span><br/>
@@ -101,12 +101,12 @@
                                     <tr>
                                         <td><p>场馆号：<label><%=theaterModify.getTheaterid()%></label></p>
                                             <div style="min-height: 140px;float: left;margin-right: 10px">
-                                                <img src="<%=theaterModify.getImage()%>" style="width:90px" alt="" /></div>
+                                                <img src="<%=theaterModify.getImage()%>" style="width:90px;margin-top: 20px" alt="" /></div>
                                             </td>
                                         <td><h5 style="margin-top: 20px"><%=theaterModify.getName()%></h5><span>邮箱：<%=theaterModify.getEmail()%></span><br/>
                                             <span>地址：<%=theaterModify.getLocation()%></span><br/>
                                             <span>电话：<%=theaterModify.getPhonenum()%></span>
-                                            <p>下单时间：</p>
+                                            <%--<p>下单时间：</p>--%>
                                         </td>
                                         <td><%=theaterModify.getAlipayid()%></td>
                                         <td style="white-space: pre"><%=theaterModify.getSeat()%></td>
