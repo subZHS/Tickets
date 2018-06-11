@@ -109,7 +109,7 @@
                                         <td><h5 style="margin-top: 20px"><%=theaterModify.getName()%></h5><span>邮箱：<%=theaterModify.getEmail()%></span><br/>
                                             <span>地址：<%=theaterModify.getLocation()%></span><br/>
                                             <span>电话：<%=theaterModify.getPhonenum()%></span>
-                                            <p>下单时间：</p>
+                                            <%--<p>下单时间：</p>--%>
                                         </td>
                                         <td><%=theaterModify.getAlipayid()%></td>
                                         <td style="white-space: pre"><%=theaterModify.getSeat()%></td>
