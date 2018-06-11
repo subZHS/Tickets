@@ -60,11 +60,15 @@ public class MailUtil implements Runnable{
             // 2.4设置邮件内容
             String content;
             if(link.indexOf("usertype=member")>=0) {
-                content = "<html><head></head><body><h1>这是一封激活邮件,激活请点击以下链接</h1><h3><a href='"
+
+                content = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head>" +
+                        "<body><h1>这是一封激活邮件,激活请点击以下链接</h1><h3><a href='"
                         + link + "'>" + link
                         + "</href></h3><h3>请记住您的会员账号为：<span style='color:red'>"+id+"</span>，以便于登录</h3></body></html>";
             }else{
-                content = "<html><head></head><body><h1>这是一封激活邮件,激活请点击以下链接</h1><h3><a href='"
+                content = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head>" +
+                        "<body><h1>这是一封激活邮件,激活请点击以下链接</h1><h3><a href='"
+
                         + link + "'>" + link
                         + "</href></h3><h3>请记住您的场馆账号为：<span style='color:red'>"+id+"</span>，以便于登录</h3></body></html>";
             }

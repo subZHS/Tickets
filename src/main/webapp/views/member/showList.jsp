@@ -6,6 +6,9 @@
 <link  href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/navstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/tagstyle.css" rel="stylesheet" type="text/css" />
+
+<link href="/resources/css/public.css"rel="stylesheet" type="text/css" />
+
 <script src="/resources/js/navanimition.js"></script>
 <!-- jQuery -->
 <script src="/resources/js/jquery.min.js"></script>

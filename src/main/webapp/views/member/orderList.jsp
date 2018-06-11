@@ -16,6 +16,10 @@
 <script src="/resources/js/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="/resources/js/bootstrap.min.js"></script>
+
+<link href="/resources/css/public.css"rel="stylesheet" type="text/css" />
+
+
 <head>
     <title>Member order list</title>
 </head>
@@ -24,12 +28,16 @@
     <jsp:param name="index" value="0"/>
 </jsp:include>
 
-<div class="container row" style="width: 1200px;margin: 50px auto;">
+
+<div class="container row">
+
     <jsp:include page="/views/member/leftmenu.jsp" flush="true">
         <jsp:param name="index" value="0"/>
     </jsp:include>
 
-    <div class="col-md-offset-1 col-md-9">
+
+    <div class="col-md-offset-3 col-md-9">
+
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>个人订单</span></div>
 
         <div class="w3_content_agilleinfo_inner" style="border-top: none;width: 100%">

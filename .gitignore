@@ -17,3 +17,5 @@ src/main/resources/META-INF/spring-servlet1.xml
 
 target/
 out/
+.idea/dataSources.xml
+.idea/dataSources.local.xml

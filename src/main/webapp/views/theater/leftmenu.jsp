@@ -13,9 +13,11 @@
     <li class="dropdown">
         <a onclick="window.location.href='/theater/j${sessionScope.theater.theaterid}/profile'" href="javascript:;" data-toggle="dropdown">场馆信息</a>
     </li>
-    <li class="dropdown">
-        <a onclick="window.location.href='/logout'" href="javascript:;" data-toggle="dropdown">退出登录</a>
-    </li>
+
+    <%--<li class="dropdown">--%>
+        <%--<a onclick="window.location.href='/logout'" href="javascript:;" data-toggle="dropdown">退出登录</a>--%>
+    <%--</li>--%>
+
 </ul>
 <script>
     var url;

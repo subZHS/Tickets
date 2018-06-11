@@ -14,6 +14,9 @@
     <!-- Bootstrap -->
     <script src="/resources/js/bootstrap.min.js"></script>
     <script src="/resources/js/cropper.min.js" type="text/javascript"></script>
+
+    <link href="/resources/css/public.css"rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <input id="memberid_hide" type="hidden" value="${sessionScope.member.memberid}"/>
@@ -22,12 +25,15 @@
     <jsp:param name="index" value="0"/>
 </jsp:include>
 
-<div class="container row" style="width: 1200px;margin: 50px auto;">
+<div class="container row">
+
     <jsp:include page="/views/member/leftmenu.jsp" flush="true">
         <jsp:param name="index" value="0"/>
     </jsp:include>
 
-    <div class="col-md-offset-1 col-md-9">
+
+    <div class="col-md-offset-3 col-md-9">
+
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>基本信息</span></div>
 
         <form id="modify_form" action="#" class="col-md-8" style="font-size: 15px;margin-top: 15px">

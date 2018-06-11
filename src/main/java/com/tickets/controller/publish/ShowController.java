@@ -121,21 +121,40 @@ public class ShowController {
     }
 
     private String getShowTypeStr(int showType){
-        String showTypeStr=null;
+
+        char[] showTypeArray=new char[2];
         if(showType==0){
-            showTypeStr="电影";
+            showTypeArray=new char[2];
+            showTypeArray[0]='\u7535';
+            showTypeArray[1]='\u5f71';//电影
         }else if(showType==1) {
-            showTypeStr="音乐剧";
+            showTypeArray=new char[3];
+            showTypeArray[0]='\u97f3';
+            showTypeArray[1]='\u4e50';
+            showTypeArray[2]='\u5267';//音乐剧
         }else if(showType==2) {
-            showTypeStr="话剧";
+            showTypeArray=new char[2];
+            showTypeArray[0]='\u8bdd';
+            showTypeArray[1]='\u5267';//话剧
         }else if(showType==3){
-            showTypeStr="舞蹈";
+            showTypeArray=new char[2];
+            showTypeArray[0]='\u821e';
+            showTypeArray[1]='\u8e48';//舞蹈
         }else if(showType==4){
-            showTypeStr="体育比赛";
+            showTypeArray=new char[4];
+            showTypeArray[0]='\u4f53';
+            showTypeArray[1]='\u80b2';
+            showTypeArray[2]='\u6bd4';
+            showTypeArray[3]='\u8d5b';//体育比赛
         }else if(showType==5){
-            showTypeStr="演唱会";
+            showTypeArray=new char[3];
+            showTypeArray[0]='\u6f14';
+            showTypeArray[1]='\u5531';
+            showTypeArray[2]='\u4f1a';//演唱会
         }
-        return showTypeStr;
+        System.out.println(showTypeArray);
+        return new String(showTypeArray);
+
     }
 
 }

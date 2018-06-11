@@ -13,6 +13,34 @@ $("#showtime_container").on("click",".showtime_remove",function () {
 });
 
 function checkFullInput(form, alert) {
+
+    if($(form+ " input[name=title]").val()==""){
+        $(alert).html("请填写演出名称").slideDown();
+        return false;
+    }
+    if($("#image").val()==""){
+        $(alert).html("请上传演出海报").slideDown();
+        return false;
+    }
+    if($(form+ " input[name=actor]").val()==""){
+        $(alert).html("请填写演员/导演").slideDown();
+        return false;
+    }
+    if($(form+ " textarea[name=description]").val()==""){
+        $(alert).html("请填写简介").slideDown();
+        return false;
+    }
+    if ($(form + " input[name|=price1]").val() == ""||$(form + " input[name|=price2]").val() == ""||$(form + " input[name|=price3]").val() == "") {
+        $(alert).html("请填写三种座位类型的价格").slideDown();
+        return false;
+    }
+    for(var i=0;i<$(form+" input[name=showtime]").length;i++) {
+        if ($(form + " input[name=showtime]").eq(i).val() == "") {
+            $(alert).html("请填写演出时间").slideDown();
+            return false;
+        }
+    }
+
     for(var i=0;i<$(form+" input").length;i++) {
         if ($(form+" input").eq(i).val() == ""||$(form+" textarea").val()=="") {
             $(alert).html("请先完善表单信息").slideDown();

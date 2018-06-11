@@ -31,12 +31,16 @@ div.seatCharts-seat.focused {background-color: #76B474;border: none;}
 div.seatCharts-seat.selected {background: url("/resources/images/selected.png");background-size:32px 32px;color: transparent }
 div.seatCharts-seat.unavailable {background: url("/resources/images/unavailable.png");background-size:32px 32px;color: transparent ;cursor: not-allowed;}
 div.seatCharts-container {border-right: 1px dotted #adadad;width: 550px;padding: 20px;float: left;}
-div.seatCharts-legend {padding-left: 40px;position: absolute;bottom: 80px;}
+
+div.seatCharts-legend {padding-left: 40px;position: absolute;bottom: 380px;}
+
 ul.seatCharts-legendList {padding-left: 0px;}
 .seatCharts-legendItem{float:left; width:90px;margin-top: 10px;line-height: 2;}
 span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
 .checkout-button {display: block;width:80px; height:24px; line-height:20px;margin: 10px auto;border:1px solid #999;font-size: 14px; cursor:pointer}
-#seats_chose {max-height: 150px;overflow-y: auto;overflow-x: none;width: 200px;}
+
+#seats_chose {max-height: 150px;overflow-y: auto;overflow-x: none;width: 300px;}
+
 #seats_chose li{float:left; width:72px; height:26px; line-height:26px; border:1px solid #d3d3d3; background:#f7f7f7; margin:6px; font-size:14px; font-weight:bold; text-align:center}
 
 #div-showTips {
@@ -51,6 +55,24 @@ span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
     max-width: 200px;
     float: right;
 }
+
+
+#div-showTipsNot {
+    width: 400px;
+    height: 240px;
+    margin: 20px auto 20px 0px;
+}
+#show-leftNot{
+    max-width: 150px;
+    float: left;
+}
+#show-rightNot{
+    max-width: 250px;
+    float: right;
+}
+
+
+
 .span-moneyTag{
     font-size: 25px;
     color: orange;

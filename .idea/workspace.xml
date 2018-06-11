@@ -1,0 +1,2285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ec3f902-0eb6-4524-a637-c5e6fef33931" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/logo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/LoginController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/manager/BalanceDetailController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/manager/BalanceListController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/manager/ManagerController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/manager/ModifyTheaterController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/manager/StatisticsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/member/BuyTicketsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/member/CouponController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/member/OrderDetailController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/member/OrderListController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/member/ProfileController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/member/WaitPayController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/publish/SearchController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/publish/ShowController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/publish/TheaterController$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/publish/TheaterController$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/publish/TheaterController$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/publish/TheaterController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/theater/CheckTicketsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/theater/OfflineOrderController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/theater/ProfileController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/theater/PublishShowController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/theater/ShowController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/controller/theater/SignUpController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/AlipayDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/BalanceDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/BaseDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/ManagerDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/MemberDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/OrderDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/ShowDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/TheaterDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/AlipayDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/BalanceDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/BaseDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/ManagerDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/MemberDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/OrderDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/ShowDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/dao/impl/TheaterDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Alipay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Balance.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Manager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Member.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Order.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/OrderRefund.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/OrderSeat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Show.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/ShowTime.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/Theater.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/model/TheaterModify.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/AlipayService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/BalanceService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/ManagerService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/MemberService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/OrderService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/ShowService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/TheaterService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/AlipayServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/BalanceServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/ManagerServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/MemberServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/OrderServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/ShowServiceImpl$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/ShowServiceImpl$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/ShowServiceImpl$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/ShowServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/service/impl/TheaterServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/CancelOrder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/DateCompare.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/LoginMessage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/MailUtil$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/MailUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/OrderState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/PayMessage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/RefundMessage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/SeatFormat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/com/tickets/util/ShowType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/activation-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/aspectjweaver-1.8.10.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/c3p0-0.9.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/classmate-1.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/commons-beanutils-1.8.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/commons-collections-3.2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/commons-fileupload-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/commons-io-2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/commons-lang-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/ehcache-2.10.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/ezmorph-1.0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/hibernate-core-5.2.12.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/hibernate-ehcache-5.2.12.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jackson-annotations-2.9.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jackson-core-2.9.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jackson-core-asl-1.9.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jackson-databind-2.9.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jandex-2.0.3.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/javassist-3.20.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jaxb-api-2.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jaxb-core-2.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jaxb-impl-2.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/json-20160810.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/jstl-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/log4j-1.2.16.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/mail-1.4.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/mysql-connector-java-5.1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/slf4j-api-1.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-aop-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-beans-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-context-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-context-support-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-core-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-expression-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-jdbc-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-orm-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-tx-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-web-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/spring-webmvc-4.3.10.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/lib/standard-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/banner/01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/banner/02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/banner/03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/banner/04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/banner/05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/banner/06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/cnnic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/defaultMovie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/hy_83x30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/icon-qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/icon-wb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/icon-wx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/login_background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/m1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/movies/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/movies/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/movies/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/movies/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/not-head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/search-not.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/top-head-15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/unavailable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/portrait/18277563751@163.com.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/portrait/member@qq.com.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/1512500/Concert/got7回归.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/1512500/Movie/三块广告牌.jpg_300x300" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/1512500/Movie/比得兔.jpg_300x300" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/j2ee025/Movie/幕后玩家.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/j2ee025/Movie/我是你妈.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/j2ee025/Movie/沉默的证人.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/j2ee025/Movie/虎皮萌企鹅.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/厉害了我的国.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/后来的我们.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/复仇者联盟3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/完美陌生人.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/比得兔.jpg_300x300" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/水形物语.jpg_160x160" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/红海行动.jpg_160x160" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theater/theater/Movie/超时空同居.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theaterImage/1512500.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/upload/theaterImage/theater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/user-head/24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/01.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/word-img/24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/images/wx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Tickets_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Tickets_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/391e6a4b-a2c3-4bb2-9006-0a345468b4e2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_12_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_5_2_12_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/homePage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/public.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/views/home_original.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/META-INF/applicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/META-INF/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/classes/META-INF/spring-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/ImgCropping.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/affix.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/chooseSeat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/cropper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/fileUpload.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/jquery.step.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/leftmenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/loginstyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/navstyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/table.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/css/tagstyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/fonts/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/cropper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/echarts.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/fileUpload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/jquery.seat-charts.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/jquery.step.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/member/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/member/profile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/navanimition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/theater/newShow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/theater/profile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/resources/js/theater/signup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/balanceDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/balanceList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/checkList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/leftmenu.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/modifyDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/profile.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/manager/statistics.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/buyTickets.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/coupon.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/leftmenu.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/orderDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/orderList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/profile.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/searchResult.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/showList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/theaterDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/theaterList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/verifyEmail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/member/waitPay.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/checkTickets.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/leftmenu.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/newShow.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/offlineOrder.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/profile.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/showDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/showList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Tickets/views/theater/signup.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/META-INF/applicationContext.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/META-INF/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-servlet.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tickets.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/font/FontAwesome.otf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/font/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.eot" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.woff" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/01.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/02.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/03.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/04.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/05.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/06.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/banner/06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/cnnic.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/cnnic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/hy_83x30.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/hy_83x30.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/icon-qq.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/icon-qq.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/icon-wb.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/icon-wb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/icon-wx.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/icon-wx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/login_background.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/login_background.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/logo.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/m1.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/m1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/1.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/2.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/3.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/4.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/movies/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/not-head.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/not-head.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/search-not.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/search-not.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/search.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/search.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/selected.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/selected.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/time.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/time.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-01.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-02.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-03.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-04.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-05.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-11.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-12.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-13.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-14.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-15.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/top-head-15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/unavailable.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/unavailable.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/01.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/02.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/03.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/04.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/05.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/06.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/07.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/07.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/08.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/08.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/09.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/09.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/10.gif" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/10.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/11.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/12.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/13.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/14.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/15.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/16.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/17.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/18.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/19.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/20.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/21.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/22.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/23.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/24.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/user-head/24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/01.gif" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/01.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/02.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/03.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/04.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/05.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/06.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/07.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/07.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/08.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/08.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/09.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/09.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/10.gif" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/10.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/11.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/12.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/13.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/14.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/15.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/16.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/17.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/18.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/19.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/20.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/21.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/22.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/23.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/24.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/word-img/24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/wx.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/wx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/controller/publish/ShowController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/controller/publish/ShowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/AlipayDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/AlipayDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/BalanceDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/BalanceDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/BaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/BaseDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/ManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/ManagerDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/MemberDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/MemberDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/OrderDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/ShowDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/ShowDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/TheaterDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/TheaterDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/AlipayDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/AlipayDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/BalanceDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/BalanceDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/BaseDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/BaseDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/ManagerDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/ManagerDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/MemberDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/MemberDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/OrderDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/ShowDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/ShowDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/TheaterDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/TheaterDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/model/Order.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/model/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/model/OrderRefund.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/model/OrderRefund.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/model/OrderSeat.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/model/OrderSeat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/service/MemberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/service/MemberService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/service/OrderService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/service/impl/MemberServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/service/impl/MemberServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/service/impl/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/service/impl/OrderServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tickets/util/MailUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/tickets/util/MailUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/ImgCropping.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/ImgCropping.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/affix.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/affix.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/animate.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/chooseSeat.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/chooseSeat.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/cropper.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/cropper.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/fileUpload.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/fileUpload.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/jquery.step.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/jquery.step.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/leftmenu.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/leftmenu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/loginstyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/loginstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/navstyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/navstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/table.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/table.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/tagstyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/tagstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/font/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/iconfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/cropper.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/cropper.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/fileUpload.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/fileUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.seat-charts.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.seat-charts.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.step.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.step.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/navanimition.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/navanimition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/theater/newShow.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/theater/newShow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/manager/balanceDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/manager/balanceDetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/manager/balanceList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/manager/balanceList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/manager/checkList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/manager/checkList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/manager/leftmenu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/manager/leftmenu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/buyTickets.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/buyTickets.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/coupon.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/coupon.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/leftmenu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/leftmenu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/orderDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/orderDetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/orderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/orderList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/searchResult.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/searchResult.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/showList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/showList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/theaterDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/theaterDetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/theaterList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/theaterList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/member/waitPay.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/member/waitPay.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/checkTickets.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/checkTickets.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/leftmenu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/leftmenu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/newShow.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/newShow.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/offlineOrder.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/offlineOrder.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/showDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/showDetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/showList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/showList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/views/theater/signup.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/views/theater/signup.jsp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets@123.206.188.226" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets@123.206.188.226" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets@123.206.188.226" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="manager" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets@123.206.188.226" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="tickets" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="alipay" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="applicationContext1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/applicationContext1.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1256">
+              <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newShow.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/newShow.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/util/MailUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="914">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-servlet1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-servlet1.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="9" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modifyDetail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-80">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/profile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-80">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistics.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/statistics.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1246">
+              <caret line="130" column="8" lean-forward="false" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>json</find>
+      <find>pass</find>
+      <find>passwor</find>
+      <find>password</find>
+      <find>P</find>
+      <find>Pass</find>
+      <find>PassP</find>
+      <find>PassPayT</find>
+      <find>PassPayTim</find>
+      <find>PassPayTime</find>
+      <find>PassPayTi</find>
+      <find>PassPay</find>
+      <find>img</find>
+      <find>head</find>
+      <find>&lt;&lt;&lt;&lt;&lt; HEAD</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bdffd85d-1496-41c4-a35a-89b979212716/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tickets/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tickets/controller/publish/ShowController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/theater/checkTickets.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/theater/leftmenu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/theater/signup.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/buyTickets.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/coupon.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/leftmenu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/orderList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/searchResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/showList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/theaterDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/member/theaterList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/manager/checkList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/theater/newShow.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tickets/util/MailUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Tickets Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Tickets Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="2762" />
+    <option name="height" value="1770" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tickets-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ariana\IdeaProjects\Tickets-master\src\main\resources\META-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME=" Tomcat 9.0.0.M20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Tickets-master" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59158" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tickets" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Tickets" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tickets" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tickets" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tickets" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="Tickets" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tickets" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tickets" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME=" Tomcat 9.0.0.M20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Tickets:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Tickets-master" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59158" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Tickets:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ec3f902-0eb6-4524-a637-c5e6fef33931" name="Default" comment="" />
+      <created>1528628723893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528628723893</updated>
+      <workItem from="1528628728086" duration="12104000" />
+      <workItem from="1528685637397" duration="864000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12968000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03283019" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="EvoSuite" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23622641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37144744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60674155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2516981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/views/member/profile.jsp</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/dao/impl/AlipayDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/controller/manager/BalanceDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="101" column="15" lean-forward="false" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tickets.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13515">
+          <caret line="255" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdffd85d-1496-41c4-a35a-89b979212716/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14204">
+          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.manager" />
+    <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.theater" />
+    <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.order" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="185" column="56" lean-forward="false" selection-start-line="185" selection-start-column="49" selection-end-line="185" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.alipay" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tickets.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/controller/publish/ShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2453#2461#0" expanded="true" />
+            <element signature="e#2512#2521#0" expanded="true" />
+            <element signature="e#2575#2583#0" expanded="true" />
+            <element signature="e#2635#2643#0" expanded="true" />
+            <element signature="e#4509#4517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="164" column="9" lean-forward="true" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/checkTickets.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/leftmenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6254">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/showList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4830">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/showDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11183">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/offlineOrder.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9897">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/buyTickets.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/coupon.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/leftmenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/orderDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/orderList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="919">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/searchResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/showList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/theaterDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/theaterList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/verifyEmail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/member/waitPay.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/balanceDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/balanceList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/checkList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1528686445693" expanded="true" signature="6688:6736" ph="..." />
+            <marker date="1528686445693" expanded="true" signature="6688:7980" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/leftmenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/statistics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-servlet1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1246">
+          <caret line="130" column="8" lean-forward="false" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/applicationContext1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1256">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/newShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tickets/util/MailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Tickets:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.13 (C:\Python27\python.exe) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Tickets</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

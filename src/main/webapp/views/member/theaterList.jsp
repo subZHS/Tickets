@@ -8,6 +8,9 @@
 <link  href="/resources/css/navstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/tagstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/table.css" rel="stylesheet" type="text/css" />
+
+<link href="/resources/css/public.css"rel="stylesheet" type="text/css" />
+
 <script src="/resources/js/navanimition.js"></script>
 <!-- jQuery -->
 <script src="/resources/js/jquery.min.js"></script>
@@ -20,7 +23,9 @@
     <jsp:param name="index" value="0"/>
 </jsp:include>
 <br/>
-<div class="bottom_text"><span>场馆列表</span><!--<i>南宁</i>--></div>
+
+<div class="bottom_text" style="margin-top:100px"><span>场馆列表</span><!--<i>南宁</i>--></div>
+
 </br>
     <div class="w3_content_agilleinfo_inner" style="border:none">
         <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">

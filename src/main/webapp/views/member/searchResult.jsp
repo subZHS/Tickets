@@ -22,7 +22,9 @@
 </jsp:include>
 
 <br/>
-<div class="bottom_text"><span>搜索到的电影</span></div>
+
+<div class="bottom_text" style="margin-top: 100px"><span>搜索到的电影</span></div>
+
 <br/>
 
 <div class="banner" style="border: 0;">

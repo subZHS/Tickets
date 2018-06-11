@@ -126,6 +126,7 @@
         if('<%=request.getParameter("orderid")%>'!='null'){
             if('<%=request.getAttribute("order")%>'=='null'){
                 if('<%=request.getAttribute("message")%>'!='null'){
+
                     var tmpMessage="";
                     switch ('<%=request.getAttribute("message")%>'){
                          case 'PassPayTime':
@@ -144,7 +145,6 @@
                             tmpMessage="已观看";
                              break;
                     }
-
 
                     alert("该订单类型是" + '<%=request.getAttribute("message")%>' + "，该订单不允许检票");
                 }else{
