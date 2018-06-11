@@ -56,21 +56,27 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="col-md-2" style="color: lightslategrey"><i style="font-size: 25px" class="fa fa-envelope" aria-hidden="true"></i> 邮箱</label>
+                            <label class="col-md-2" style="color: lightslategrey">
+                                <%--<i style="font-size: 25px" class="fa fa-envelope" aria-hidden="true"></i> --%>
+                                邮箱</label>
                             <label class="col-md-5">${theater.email}</label>
                             <label class="col-md-5">${theaterModify.email}</label>
                         </div>
                     </div>
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="col-md-2" style="color: lightslategrey"><i style="font-size: 25px" class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; 地址</label>
+                            <label class="col-md-2" style="color: lightslategrey">
+                                <%--<i style="font-size: 25px" class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; --%>
+                                地址</label>
                             <label class="col-md-5">${theater.location}</label>
                             <label class="col-md-5">${theaterModify.location}</label>
                         </div>
                     </div>
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="col-md-2" style="color: lightslategrey"><i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i> 电话</label>
+                            <label class="col-md-2" style="color: lightslategrey">
+                                <%--<i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i> --%>
+                                电话</label>
                             <label class="col-md-5">${theater.phonenum}</label>
                             <label class="col-md-5">${theaterModify.phonenum}</label>
                         </div>
