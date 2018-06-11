@@ -62,7 +62,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <%--<i style="font-size: 25px" class="fa fa-map-marker" aria-hidden="true"></i> --%>
+                        <i style="font-size: 25px" class="fa fa-map-marker" aria-hidden="true"></i>
                         地址</label>
                     <input name="location" type="text" class="form-control" oninput="onInput()" value="${sessionScope.theater.location}">
                 </div>
@@ -70,7 +70,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <%--<i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i> --%>
+                        <i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i>
                         电话
                     </label>
                     <input name="phonenum" type="number" class="form-control" oninput="onInput()" value="${sessionScope.theater.phonenum}">
@@ -79,7 +79,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <%--<i style="font-size: 25px" class="fa fa-user" aria-hidden="true"></i> --%>
+                        <i style="font-size: 25px" class="fa fa-user" aria-hidden="true"></i>
                         收款账号
                     </label>
                     <input name="alipayid" type="text" class="form-control" oninput="onInput()" value="${sessionScope.theater.alipayid}">
