@@ -24,3 +24,8 @@ pom.xml
 src/main/resources/META-INF/applicationContext.xml
 src/main/resources/META-INF/spring-servlet.xml
 Tickets.iml
+pom.xml
+src/main/resources/META-INF/applicationContext.xml
+src/main/resources/META-INF/spring-servlet.xml
+src/main/resources/META-INF/applicationContext.xml
+src/main/resources/META-INF/spring-servlet.xml
