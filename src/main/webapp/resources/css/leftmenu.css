@@ -45,3 +45,15 @@
     z-index: 99;
 
 }
+
+#theater_leftmenu {
+    position: fixed;
+    z-index: 99;
+
+}
+
+#manager_leftmenu {
+    position: fixed;
+    z-index: 99;
+
+}

@@ -152,7 +152,7 @@ public class ShowController {
             showTypeArray[1]='\u5531';
             showTypeArray[2]='\u4f1a';//演唱会
         }
-        System.out.println(showTypeArray);
+//        System.out.println(showTypeArray);
         return new String(showTypeArray);
 
     }

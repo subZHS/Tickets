@@ -19,7 +19,6 @@
     <jsp:param name="index" value="0"/>
 </jsp:include>
 
-
 <div class="container row" style="width: 1200px;">
 
     <div class="col-md-offset-2 col-md-8">
