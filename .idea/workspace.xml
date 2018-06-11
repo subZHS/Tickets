@@ -668,17 +668,41 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="53">
-              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+              <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modifyDetail.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="offlineOrder.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/offlineOrder.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="58" column="116" lean-forward="false" selection-start-line="58" selection-start-column="116" selection-end-line="58" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modifyDetail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+            <state relative-caret-position="128">
+              <caret line="77" column="55" lean-forward="false" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -693,8 +717,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>json</find>
-      <find>pass</find>
       <find>passwor</find>
       <find>password</find>
       <find>P</find>
@@ -708,12 +730,23 @@
       <find>img</find>
       <find>head</find>
       <find>&lt;&lt;&lt;&lt;&lt; HEAD</find>
-      <find>s</find>
       <find>收款</find>
       <find>x</find>
       <find>修改</find>
       <find>修改qian</find>
       <find>修改前</find>
+      <find>s</find>
+      <find>shou'kuan'zhang</find>
+      <find>shou'kuan'zhang'h</find>
+      <find>收款账户</find>
+      <find>收款账</find>
+      <find>qin</find>
+      <find>qi</find>
+      <find>q</find>
+      <find>请输入</find>
+      <find>请输入hu</find>
+      <find>请输入hui</find>
+      <find>请输入会员</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -732,7 +765,6 @@
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bdffd85d-1496-41c4-a35a-89b979212716/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/tickets/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tickets/controller/publish/ShowController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/home.jsp" />
@@ -757,8 +789,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/theater/newShow.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/navstyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/manager/checkList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1025,7 +1058,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -1733,15 +1766,16 @@
       <option name="presentableId" value="Default" />
       <updated>1528628723893</updated>
       <workItem from="1528628728086" duration="12104000" />
-      <workItem from="1528685637397" duration="1462000" />
+      <workItem from="1528685637397" duration="1682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13566000" />
+    <option name="totallyTimeSpent" value="13786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1764,11 +1798,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37144744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37144744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60608065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2516981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60608065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2516981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1806,13 +1840,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bdffd85d-1496-41c4-a35a-89b979212716/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14204">
-          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.manager" />
     <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.theater" />
     <entry file="dbDummy://dbtable:/834fe3cc/bdffd85d-1496-41c4-a35a-89b979212716/tickets.order" />
@@ -1916,14 +1943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-184">
           <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/offlineOrder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9897">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2152,14 +2171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
@@ -2178,24 +2189,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/manager/modifyDetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        <state relative-caret-position="128">
+          <caret line="77" column="55" lean-forward="false" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1528687132902" expanded="false" signature="3565:3580" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#label#0;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/theater/offlineOrder.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="58" column="116" lean-forward="false" selection-start-line="58" selection-start-column="116" selection-end-line="58" selection-end-column="116" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2218,7 +2257,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2254,12 +2293,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Tickets</last-edited>
+          <last-edited>Spring|Tickets</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2279,7 +2317,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -56,7 +56,10 @@
                 <p>座位：</p>
                 <ul id="seats_chose"></ul>
                 <p>票数：<span id="tickects_num">0</span></p>
-                <p>会员：<input oninput="checkDiscount()" id="memberid" type="email" class="form-control" placeholder="请输入会员账号"/><span id="show_discount" style="display: none">（享受 <span id="discount" style="color: red">9</span> 折优惠）</span></p>
+                <p>会员：
+                    <input oninput="checkDiscount()" id="memberid" type="email" class="form-control" placeholder="请输入会员账号"/>
+                    <small style="color:lightgrey">非必填。</small>
+                    <span id="show_discount" style="display: none">（享受 <span id="discount" style="color: red">9</span> 折优惠）</span></p>
                 <p>总价：<b>￥<span id="total_price">0</span></b></p>
                 <input type="button" class="btn btn-primary" onclick="submitOfflineOrder()" value="确定购买" style="margin-top: 10px"/>
             </div>
