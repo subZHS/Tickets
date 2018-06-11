@@ -16,3 +16,11 @@ src/main/resources/META-INF/spring-servlet1.xml
 
 target/
 out/
+.idea/artifacts/Tickets_war_exploded.xml
+.idea/dataSources.local.xml
+.idea/dataSources/391e6a4b-a2c3-4bb2-9006-0a345468b4e2.xml
+.idea/workspace.xml
+pom.xml
+src/main/resources/META-INF/applicationContext.xml
+src/main/resources/META-INF/spring-servlet.xml
+Tickets.iml
