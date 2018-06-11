@@ -20,13 +20,13 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
-
+<div style="display: block;height: 50px"></div>
 <div class="container row" style="width: 1200px;margin: 50px auto;">
     <jsp:include page="/views/theater/leftmenu.jsp" flush="true">
         <jsp:param name="index" value="0"/>
     </jsp:include>
 
-    <div class="col-md-9" style="margin-left: 5%">
+    <div class="col-md-offset-3  col-md-9">
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>线下购票</span></div>
 
         <div class="w3_content_agilleinfo_inner" style="border:none;width: 100%;padding-left: 0px">
@@ -44,7 +44,7 @@
             <!---左边座位列表----->
             <div id="seat_area" style="max-height: 650px;overflow:auto">
                 <div class="front">屏幕</div>
-                <div id="legend"></div>
+                <div id="legend" style="bottom:220px"></div>
             </div>
             <!---右边选座信息----->
             <div class="booking_area" style="height: 750px">

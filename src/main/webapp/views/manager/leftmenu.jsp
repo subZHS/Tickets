@@ -10,9 +10,9 @@
     <li class="dropdown">
         <a onclick="window.location.href='/ticketsManager/j${managerid}/statistics'" data-toggle="dropdown">统计</a>
     </li>
-    <li class="dropdown">
-        <a onclick="window.location.href='/logout'" data-toggle="dropdown">退出登录</a>
-    </li>
+    <%--<li class="dropdown">--%>
+        <%--<a onclick="window.location.href='/logout'" data-toggle="dropdown">退出登录</a>--%>
+    <%--</li>--%>
 </ul>
 
 <script>

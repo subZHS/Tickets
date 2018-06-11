@@ -21,13 +21,13 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
-
+<div style="display: block;height: 50px"></div>
 <div class="container row" style="width: 1200px;margin: 50px auto;">
     <jsp:include page="/views/theater/leftmenu.jsp" flush="true">
         <jsp:param name="index" value="0"/>
     </jsp:include>
 
-    <div class="col-md-9" style="margin-left: 5%">
+    <div class="col-md-offset-3  col-md-9">
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>场馆信息</span></div>
 
         <form action="#" class="col-md-8" id="modifyTheater" style="font-size: 15px;margin-top: 15px">

@@ -20,6 +20,8 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
+<div style="display: block;margin:100px auto"></div>
+
 <div id="div-notBottom" style="min-height: 1080px">
     <div id="step" style="	width: 1000px;	margin: 20px auto;margin-bottom: 30px;"></div>
 

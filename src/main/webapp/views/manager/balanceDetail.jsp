@@ -21,13 +21,13 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
-
+<div style="display: block;height: 50px"></div>
 <div class="container row" style="width: 1200px;margin: 50px auto;">
     <jsp:include page="/views/manager/leftmenu.jsp" flush="true">
         <jsp:param name="index" value="0"/>
     </jsp:include>
 
-    <div class="col-md-9" style="margin-left: 5%">
+    <div class="col-md-offset-3  col-md-9">
         <ol class="breadcrumb">
             <li><a href="/ticketsManager/j${managerid}/balanceList?balanceType=notPay" style="outline: none;padding: 0;font-size: 15px" class="btn btn-link">结算</a></li>
             <li class="active">${show.title}</li>
