@@ -40,36 +40,35 @@
             <div class="alert alert-danger" style="display: none">错误！请进行一些更改。</div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label for="level" style="margin-right: 3%">会员等级</label>
-                    <span id="level" style="font-size: 30px;font-family: georgia;color: #C9302C;">
-                        lv ${level}</span>
+                    <label for="level" style="margin-right: 8%">会员等级</label>
+                    <span id="level" style="font-size: 22px;color: #C9302C;margin-right: 5%">lv ${level}</span>
                     <span style="color: grey">（可享受 <span style="color: #C9302C">${discount}</span> 折优惠）</span>
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label style="margin-right: 8%">积分</label>
-                    <span style="color: #C9302C;font-family: georgia;font-size:22px;margin-right: 5%">${sessionScope.member.points}</span>
+                    <label style="margin-right: 8%">积&emsp;&emsp;分</label>
+                    <span style="color: #C9302C;font-size:20px;margin-right: 5%">${sessionScope.member.points}</span>
                     <a style="outline: none" class="btn btn-link" onclick="window.location.href='/member/j${sessionScope.member.memberid}/coupon'">>>可兑换优惠劵>></a>
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label>邮箱</label>
+                    <label>邮&emsp;&emsp;箱</label>
                     <input type="email" class="form-control" value="${sessionScope.member.memberid}" disabled="disabled">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label>昵称</label>
+                    <label>昵&emsp;&emsp;称</label>
                     <input name="name" type="text" class="form-control" value="${sessionScope.member.name}" oninput="onInput()">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label for="sex" style="margin-right: 3%">性别</label><br>
+                    <label for="sex" style="margin-right: 3%">性&emsp;&emsp;别</label><br>
                     <%--拉长性别选择框长度--%>
-                    <select id="sex" style="width: 100%;height: 30px;border-radius: 6%">
+                    <select id="sex" style="width: 100%;height: 40px;border-radius: 6%">
                         <%
                             Member member=(Member)session.getAttribute("member");
                         %>
@@ -81,7 +80,7 @@
 
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label>年龄</label>
+                    <label>年&emsp;&emsp;龄</label>
                     <input name="age" type="number" class="form-control" value="${sessionScope.member.age}" oninput="onInput()">
                 </div>
             </div>

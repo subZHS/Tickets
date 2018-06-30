@@ -64,7 +64,7 @@
             <p>座位：</p>
             <ul id="seats_chose"></ul>
             <p>票数：(限6张) &nbsp;<span id="tickects_num">0</span></p>
-            <p>会员等级优惠: <span style="font-size: 25px;font-family: georgia;color: #C9302C;">${discount*10}</span> 折</p>
+            <p>会员等级优惠: <span style="font-size: 25px;color: #C9302C;">${discount*10}</span> 折</p>
             <p style="margin-bottom: 0;padding-bottom:0"><label>优惠券:</label></p>
             <div>
                 <select id="coupon_select" onchange="calculateSeatOrderPrice(getSeats())"
@@ -78,7 +78,8 @@
             </div>
             <p><a target="_blank" href="/member/j${sessionScope.member.memberid}/coupon" class="btn btn-link"
                   style="outline: none;margin-top: 10px;padding-top:0">>>获取优惠券>></a></p>
-            <p>总价：<b><span class="span-moneyTag">¥</span><span id="total_price">0</span></b></p>
+                <p>总价：<b><span class="span-moneyTag" style="font-size: 25px;color: orange;">¥</span><span style="font-size: 25px;color: #C9302C;" id="total_price">0</span></b>
+                </p>
             <input type="button" class="btn btn-primary" onclick="submitSeatOrder(getSeats())" value="确定购买"
                    style="margin-top: 10px;margin-left: 250px"/>
         </div>
@@ -146,7 +147,7 @@
                 <div class="col-md-12">
                     <label class="col-md-2">会员等级优惠</label>
                     <div class="col-md-2">
-                        <span style="font-size: 25px;font-family: georgia;color: #C9302C;">${discount*10}</span>
+                        <span style="font-size: 25px;color: #C9302C;">${discount*10}</span>
                     </div>
                     <label class="col-md-2">折</label>
                 </div>
@@ -171,7 +172,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label class="col-md-2">总&emsp;&emsp;&emsp;&emsp;价</label>
-                    <label class="col-md-10"><span style="font-size: 25px;font-family: georgia;color: #C9302C;"><span class="span-moneyTag">¥</span><span
+                    <label class="col-md-10"><span style="font-size: 25px;color: #C9302C;"><span class="span-moneyTag">¥</span><span
                             id="noSeat_price">0</span></span><span style="color: grey">（每张票是所有价位的最低价）</span></label>
                 </div>
             </div>

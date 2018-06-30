@@ -31,7 +31,7 @@
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>场馆统计</span></div>
         <br/>
         <!--场馆收入-->
-        <div id="theaterIncome" style="width: 600px;height:400px;"></div>\
+        <div id="theaterIncome" style="width: 600px;height:400px;"></div>
         <br/>
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>演出统计</span></div>
         <br/>

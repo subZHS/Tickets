@@ -45,8 +45,9 @@
             <div class="col-md-12 col-md-offset-0 text-left">
                 <div class="row row-mt-15em">
                     <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                        <span class="intro-text-small">Welcome to Tickets</span>
-                        <h1>This website allows buying tickets to see shows.</h1>
+                        <h1 style="font-family: georgia;">Welcome to <span style="color: cornflowerblue">Tickets</span></h1>
+                        <p></p>
+                        <span class="intro-text-small">This website allows buying tickets to see shows.</span>
                     </div>
                     <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                         <div class="form-wrap">

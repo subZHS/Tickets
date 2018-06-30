@@ -34,7 +34,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label style="margin-right: 8%">总收入</label>
-                    <span style="color: #C9302C;font-family: georgia;font-size:22px;margin-right: 5%">l000</span>
+                    <span style="color: #C9302C;font-size:22px;margin-right: 5%">l000</span>
                     <a href="/theater/j${sessionScope.theater.theaterid}/showList" style="outline: none" class="btn btn-link">>>查看收入详情>></a>
                 </div>
             </div>

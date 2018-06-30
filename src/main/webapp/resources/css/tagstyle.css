@@ -3,7 +3,7 @@
     font-size:15px;
     width:1200px; margin:0 auto;
     margin-bottom: 30px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     border-top:1px solid #ccc;
 }
 .bs-example.bs-example-tabs {

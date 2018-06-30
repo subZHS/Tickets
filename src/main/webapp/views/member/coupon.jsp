@@ -41,7 +41,7 @@
                             <div class="agile-news-table">
                                 <div class="w3ls-news-result">
                                     <h4>剩余积分:
-                                        <span style="font-family: georgia;color: #C9302C;font-size: 22px"> ${sessionScope.member.points} </span>
+                                        <span style="color: #C9302C;font-size: 22px"> ${sessionScope.member.points} </span>
                                         <%--消费金额*10的颜色，使其更明显--%>
                                         <span style="color: grey">（每消费一次，您的积分会增加<span style="color: orange;">消费金额*10</span>)</span></h4>
                             </div>
