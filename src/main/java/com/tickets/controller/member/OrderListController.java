@@ -12,13 +12,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller //@Controller用于标注控制层组件(如struts中的action)
 @Scope("prototype")
@@ -61,7 +64,24 @@ public class OrderListController {
         modelMap.addAttribute("dateTimeList",dateTimeList);
         modelMap.addAttribute("orderSeatsList",orderSeatsList);
         modelMap.addAttribute("orderList",orderList);
+
         return "member/orderList";
+    }
+
+    @RequestMapping(value = "/getTop10shows", method = RequestMethod.GET)
+    @ResponseBody
+    public Object getTop10shows(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response){
+        //排行榜
+        List<Show> top10ShowList=showService.getTop10ShowList();
+        List<String> top10TheaterIdList=new ArrayList<String>();
+        for(Show show:top10ShowList){
+            Theater theater=theaterService.getTheater(show.getTheaterid());
+            top10TheaterIdList.add(theater.getTheaterid());
+        }
+        Map<String,Object> result=new HashMap<String, Object>();
+        result.put("top10ShowList",top10ShowList);
+        result.put("top10TheaterIdList",top10TheaterIdList);
+        return result;
     }
 
 }

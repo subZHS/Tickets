@@ -2,10 +2,9 @@ package com.tickets.controller;
 
 import com.tickets.model.Manager;
 import com.tickets.model.Member;
+import com.tickets.model.Show;
 import com.tickets.model.Theater;
-import com.tickets.service.ManagerService;
-import com.tickets.service.MemberService;
-import com.tickets.service.TheaterService;
+import com.tickets.service.*;
 import com.tickets.util.LoginMessage;
 import com.tickets.util.MailUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller //@Controller用于标注控制层组件(如struts中的action)
@@ -37,6 +38,32 @@ public class LoginController {
     TheaterService theaterService;
     @Autowired
     ManagerService managerService;
+    @Autowired
+    ShowService showService;
+    @Autowired
+    OrderService orderService;
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String homePage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
+        List<Show> top10ShowList=showService.getTop10ShowList();
+        modelMap.addAttribute("top10ShowList",top10ShowList);
+        List<String> showTypeList=new ArrayList<String>();
+        List<Integer> seatNumList=new ArrayList<Integer>();
+        List<String> theaterNameList=new ArrayList<String>();
+        List<String> theaterIdList=new ArrayList<String>();
+        for(Show show:top10ShowList){
+            showTypeList.add(getShowTypeStr(show.getType()));
+            seatNumList.add(orderService.getValidSeatNumInOneShow(show.getShowid()));
+            Theater theater=theaterService.getTheater(show.getTheaterid());
+            theaterNameList.add(theater.getName());
+            theaterIdList.add(theater.getTheaterid());
+        }
+        modelMap.addAttribute("showTypeList",showTypeList);
+        modelMap.addAttribute("seatNumList",seatNumList);
+        modelMap.addAttribute("theaterNameList",theaterNameList);
+        modelMap.addAttribute("theaterIdList",theaterIdList);
+        return "home";
+    }
 
     @RequestMapping(value = "/checkMemberLogined", method = RequestMethod.GET)
     @ResponseBody
@@ -203,4 +230,42 @@ public class LoginController {
         }
         return "member/verifyEmail";
     }
+
+    private String getShowTypeStr(int showType){
+
+        char[] showTypeArray=new char[2];
+        if(showType==0){
+            showTypeArray=new char[2];
+            showTypeArray[0]='\u7535';
+            showTypeArray[1]='\u5f71';//电影
+        }else if(showType==1) {
+            showTypeArray=new char[3];
+            showTypeArray[0]='\u97f3';
+            showTypeArray[1]='\u4e50';
+            showTypeArray[2]='\u5267';//音乐剧
+        }else if(showType==2) {
+            showTypeArray=new char[2];
+            showTypeArray[0]='\u8bdd';
+            showTypeArray[1]='\u5267';//话剧
+        }else if(showType==3){
+            showTypeArray=new char[2];
+            showTypeArray[0]='\u821e';
+            showTypeArray[1]='\u8e48';//舞蹈
+        }else if(showType==4){
+            showTypeArray=new char[4];
+            showTypeArray[0]='\u4f53';
+            showTypeArray[1]='\u80b2';
+            showTypeArray[2]='\u6bd4';
+            showTypeArray[3]='\u8d5b';//体育比赛
+        }else if(showType==5){
+            showTypeArray=new char[3];
+            showTypeArray[0]='\u6f14';
+            showTypeArray[1]='\u5531';
+            showTypeArray[2]='\u4f1a';//演唱会
+        }
+//        System.out.println(showTypeArray);
+        return new String(showTypeArray);
+
+    }
+
 }

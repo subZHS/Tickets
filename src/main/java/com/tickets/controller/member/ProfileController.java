@@ -1,7 +1,11 @@
 package com.tickets.controller.member;
 
 import com.tickets.model.Member;
+import com.tickets.model.Show;
+import com.tickets.model.Theater;
 import com.tickets.service.MemberService;
+import com.tickets.service.ShowService;
+import com.tickets.service.TheaterService;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller //@Controller用于标注控制层组件(如struts中的action)
 @Scope("prototype")
@@ -24,6 +30,10 @@ public class ProfileController {
 
     @Autowired
     MemberService memberService;
+    @Autowired
+    ShowService showService;
+    @Autowired
+    TheaterService theaterService;
 
     @RequestMapping(value = "/j{memberid}/profile", method = RequestMethod.GET)
     public String profilePage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) throws IOException {
@@ -33,6 +43,17 @@ public class ProfileController {
         double discount= memberService.getDiscount(member.getMemberid());
         modelMap.addAttribute("level",level);
         modelMap.addAttribute("discount",discount*10);
+
+        //排行榜
+        List<Show> top10ShowList=showService.getTop10ShowList();
+        modelMap.addAttribute("top10ShowList",top10ShowList);
+        List<String> top10TheaterIdList=new ArrayList<String>();
+        for(Show show:top10ShowList){
+            Theater theater=theaterService.getTheater(show.getTheaterid());
+            top10TheaterIdList.add(theater.getTheaterid());
+        }
+        modelMap.addAttribute("top10TheaterIdList",top10TheaterIdList);
+
         return "member/profile";
     }
 

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*body{background:#fff;font:normal 12px/22px 宋体;}*/
+.tab-rank img{border:0;}
+
+.tab-rank{width:240px;margin:160px auto;border:1px solid #d8d8d8;position: fixed;z-index: 99;background-color:#f9f9f9;}
+.tab-rank .hd{background-color:#2c89c6;height:40px;border-bottom:none;}
+.tab-rank .hd h3{float:left;width:124px;overflow:hidden;text-align:center;}
+.tab-rank .hd h3 a{line-height: 40px;color:#fff;font-size:15px;font-weight:bold;}
+/*.tab-rank .hd h3.on{background-color:#f9f9f9;height:29px;}*/
+/*.tab-rank .hd h3.on a{display:block;color:#e72410;}*/
+.tab-rank .bd{clear:both;}
+.tab-rank .bd ul{padding:0px 8px;}
+.tab-rank .bd .ulList  li{border-bottom:1px solid #e5e5e5;height:42px;line-height:42px;width:232px !important;}
+.tab-rank .bd .ulList li a{padding-left: 5%;}
+.tab-rank .bd .ulList li .num{font-size:14px;font-weight:bold;color:#333;background:url(../images/rankIcons.png) no-repeat -50px 0;width:24px;height:20px;display:block;float:left;line-height:17px;text-align:center;margin-top:13px;padding-right:6px;}
+.tab-rank .bd .ulList li.t .num{background-position:0 0;color:#fff;}
+.tab-rank .bd .ulList li.t{line-height:42px !important;}
+.tab-rank .bd .ulList li.on img{margin-left: 10%;height:150px;padding:4px;border:1px solid #d0d0d0;background-color:#fff;}
+.tab-rank .bd .ulList li .pubtext{color:#777;display:none;}
+.tab-rank .bd .ulList li .pubtext strong{color:#E72410;}
+.tab-rank .bd .ulList li .pubtext a{color:#E72410;}
+.tab-rank .bd .ulList li .pubpic{display:none;}
+.tab-rank .bd .ulList li .pubtitle p{display:none;}
+.tab-rank .bd .ulList li.on{height:180px;line-height:22px !important;}
+.tab-rank .bd .ulList li.on .pubtitle{text-align: center;margin-right: 8%}
+.tab-rank .bd .ulList li.on .pubpic{display:block;padding-top:5px;}
+.tab-rank .bd .ulList li.on .pubtext{color:#777;display:block;}
+.tab-rank .bd .ulList li.on .pubtitle p{display:block;}
+.tab-rank .bd .ulList2 .pic{float:left;}
+.tab-rank .bd .ulList2 .con{float:right;width:160px;}
+.tab-rank .bd .ulList2 li{clear:both;padding-top:8px;height:58px;border-bottom:1px solid #E5E5E5;}
+.tab-rank .bd .ulList2 img{width:57px;height:47px;padding:1px;border:1px solid #d0d0d0;background-color:#fff;float:left;}

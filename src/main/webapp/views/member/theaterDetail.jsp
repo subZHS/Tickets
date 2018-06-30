@@ -76,7 +76,7 @@ if(showList.size()==0){%>
     <div class="w3_content_agilleinfo_inner" style="padding-bottom:35px;border-bottom: 1px solid #ccc">
         <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
             <ul id="myTab" class="nav-tabs" role="tablist">
-                <li><b>演出时间： &nbsp;&nbsp;&nbsp;</b></li>
+                <li><b>演出日期： &nbsp;&nbsp;&nbsp;</b></li>
                 <%List<String> dateStrList = (List<String>)request.getAttribute("dateStrList");
                 String date=(String)request.getAttribute("date");
                 for(String dateStr:dateStrList){%>

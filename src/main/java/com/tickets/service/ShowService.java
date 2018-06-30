@@ -126,6 +126,8 @@ public interface ShowService {
      */
     public boolean offlineOrder(String showtimeid, List<OrderSeat> orderSeatList);
 
+    public List<Show> getTop10ShowList();
+
     //同层调用
 
     /*

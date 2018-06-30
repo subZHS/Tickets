@@ -417,6 +417,27 @@ public class ShowServiceImpl implements ShowService {
         return occupySeat(showtimeid,orderSeatList);
     }
 
+    public List<Show> getTop10ShowList() {
+        try {
+            refleshShowState();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        List<Show> showList = showDao.getNotPassShowList();
+        //按热度倒序排序
+        Collections.sort(showList, new Comparator<Show>() {
+            public int compare(Show o1, Show o2) {
+                int orderNum1 = orderService.getValidSeatNumInOneShow(o1.getShowid());
+                int orderNum2 = orderService.getValidSeatNumInOneShow(o2.getShowid());
+                return orderNum2-orderNum1;
+            }
+        });
+        if(showList.size()>=10) {
+            showList = showList.subList(0, 10);
+        }
+        return showList;
+    }
+
     public List<Show> getPassedShowList() {
         List<Show> showList= showDao.getpassedShowList();
         if(showList==null){

@@ -11,7 +11,7 @@
                 <%--<li><a href="/publish/showList?isOpen=true&showType=All&orderType=heat">演出</a></li>--%>
                 <%--<li><a href="/publish/theaterList?orderType=heat">场馆</a></li>--%>
 <%--=======--%>
-        <div class="logo" onclick="window.location.href='/views/home.jsp'"><img src="/resources/images/logo1.png" width="auto" height="100%" /></div>
+        <div class="logo" onclick="window.location.href='/'"><img src="/resources/images/logo1.png" width="auto" height="100%" /></div>
         <div class="nav">
             <ul>
                 <%--<li class="index"><a href="/views/home.jsp">首页</a></li>--%>

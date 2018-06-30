@@ -42,7 +42,7 @@
 
         <div class="w3_content_agilleinfo_inner" style="border-top: none;width: 100%">
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-                <ul id="myTab" class="nav-tabs" role="tablist">
+                <ul id="myTab" class="nav-tabs" role="tablist" style="border: none">
                     <%OrderState orderState= OrderState.valueOf(request.getParameter("orderState"));%>
                     <li><b>订单状态： &nbsp;&nbsp;&nbsp;</b></li>
                     <li role="presentation" <%if(orderState==OrderState.All){%> class="active"<%}%>>
