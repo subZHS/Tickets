@@ -8,6 +8,7 @@
 <link  href="/resources/css/navstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/tagstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/table.css" rel="stylesheet" type="text/css" />
+<link href="/resources/css/theaterList.css"rel="stylesheet" type="text/css" />
 <script src="/resources/js/navanimition.js"></script>
 <!-- jQuery -->
 <script src="/resources/js/jquery.min.js"></script>
@@ -68,55 +69,62 @@
 <br/>
 <div class="bottom_text"><span>搜索到的影院</span></div>
 
-<div class="w3_content_agilleinfo_inner table_list" style="border-top:none">
-    <div class="agile_featured_movies">
-        <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-            <div id="myTabContent" class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
-                    <div class="agile-news-table">
-                        <%List<Theater> theaterList = (List<Theater>)request.getAttribute("theaterList");
-                            if(theaterList.size()==0){%>
-                        <h3 style="text-align: center">Sorry, cannot search relative theaters -_-</h3>
-                         <%}else{%>
-                        <table id="table-breakpoint">
-                            <thead>
-                            <tr>
-                                <th>影院信息</th>
-                                <th></th>
-                                <th>进入</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <%for(int i=0;i<theaterList.size();i++){
-                                    Theater theater = theaterList.get(i);
-                            %>
-                            <tr>
-                                <td><p>场馆号：<label class="theaterid"><%=theater.getTheaterid()%></label></p>
-                                    <div style="min-height: 140px;float: left;margin-right: 10px">
-                                        <img src="<%=theater.getImage()%>" style="width:90px" alt="" /></div>
-                                </td>
-                                <td><h5 style="margin-top: 20px"><%=theater.getName()%></h5>
-                                    <span>邮箱：<%=theater.getEmail()%></span><br/>
-                                    <span>地址：<%=theater.getLocation()%></span><br/>
-                                    <span>电话：<%=theater.getPhonenum()%></span></td>
-                                <td>
-                                    <a href="/publish/theater/j<%=theater.getTheaterid()%>" class="btn btn-link">进入-></a>
-                                </td>
-                            </tr>
-                            <%}}%>
-                            </tbody>
-                        </table>
+<!-- latest blog start -->
+<div class="latest-blog-area">
+    <div class="w3_content_agilleinfo_inner" style="border: none">
+        <div class="row">
+            <div class="latest-blog-slider">
+                <%List<Theater> theaterList = (List<Theater>)request.getAttribute("theaterList");
+                    if(theaterList.size()==0){%>
+                <h3 style="text-align: center">Sorry, cannot search relative theaters -_-</h3>
+                <%}else{
+                    for(int i=0;i<theaterList.size();i++){
+                        Theater theater = theaterList.get(i);
+                %>
+                <div class="col-md-6">
+                    <div class="single-latest-blog row">
+                        <div class="single-latest-blog-img">
+                            <a>
+                                <img src="<%=theater.getImage()%>" alt="">
+                            </a>
+                        </div>
+                        <div class="single-latest-blog-text">
+                            <div class="date-comment clearfix">
+                                <h4><%=theater.getName()%></h4>
+
+                            </div>
+                            <div class="blog-content">
+                                <p>邮箱：<%=theater.getEmail()%></p>
+                                <p>地址：<%=theater.getLocation()%></p>
+                                <p>电话：<%=theater.getPhonenum()%></p>
+                            </div>
+                            <div class="continue-reading">
+                                <div class="blog-icon">
+                                    <a href="/publish/theater/j<%=theater.getTheaterid()%>" style="display: none" class="btn btn-primary">详情</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <%}}%>
             </div>
-
         </div>
-
     </div>
 </div>
+<!-- blog end -->
+
 <%--底线--%>
 <jsp:include page="/views/bottomLine.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
+
+<script>
+    $(".single-latest-blog").mouseover(function () {
+        $(this).find(".blog-icon a").show();
+    });
+    $(".single-latest-blog").mouseout(function () {
+        $(this).find(".blog-icon a").hide();
+    });
+</script>
 </body>
 </html>

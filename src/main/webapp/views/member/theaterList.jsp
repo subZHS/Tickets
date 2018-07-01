@@ -8,7 +8,6 @@
 <link  href="/resources/css/navstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/tagstyle.css" rel="stylesheet" type="text/css" />
 <link  href="/resources/css/table.css" rel="stylesheet" type="text/css" />
-<link  href="/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <link href="/resources/css/public.css"rel="stylesheet" type="text/css" />
 
@@ -74,7 +73,7 @@
                                 <%if(minPriceTheaterMap.get(theater.getTheaterid())>0){%>
                                 <h5><label style="float: right;margin:5px 5px;font-weight: 400"><label style="font-size: 16px;font-family: georgia;color: #C9302C;">¥<%=minPriceTheaterMap.get(theater.getTheaterid())%></label>起</label></h5>
                                 <%}else{%>
-                                <h5><label style="float: right;margin:5px 5px;font-weight: 400"><label style="font-size: 16px;">¥暂无</label>起</label></h5>
+                                <h5><label style="float: right;margin:5px 5px;font-weight: 400"><label style="font-size: 16px;font-weight: 400">¥暂无</label>起</label></h5>
                                 <%}%>
                             </div>
                             <div class="blog-content">
