@@ -123,8 +123,8 @@ border:1px solid #ccc; -webkit-box-shadow: 0 0 2px #ccc; -webkit-border-radius:5
 .main_bottom{ width:100%; height:30px; margin:0; padding:0; float:left;}
 .main_bottom span{padding-left:28px; color:#333; font:12px "微软雅黑"; line-height:35px;}
 .main_bottom span:nth-child(1){ background: url(/resources/images/seat.png) no-repeat left center;background-size: 18px;}
-.main_bottom span:nth-child(2){ background: url(../images/replys.png) no-repeat left center;}
-.main_bottom span:nth-child(3){ background: url(../images/praises.png) no-repeat left center;}
+/*.main_bottom span:nth-child(2){ background: url(../images/replys.png) no-repeat left center;}*/
+/*.main_bottom span:nth-child(3){ background: url(../images/praises.png) no-repeat left center;}*/
 .main_bottom a{ float:right; font:12px "微软雅黑"; color:#666; line-height:35px;}
 
 .banner_bottom{ width:450px; height:40px; margin:0px auto; padding:0;}

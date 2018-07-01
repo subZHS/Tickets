@@ -1,0 +1,163 @@
+/*----------------------------------------*/
+/*  theaterList CSS
+/*----------------------------------------*/
+.latest-blog-area{
+    /*background: #FBFBFB;*/
+    padding-bottom: 88px;
+}
+.latest-blog-area .section-title h2, .client-area .section-title h2 {
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 50px;
+    margin-top: 89px;
+    padding-bottom: 42px;
+}
+.latest-blog-area .section-title h2{
+    margin-bottom: 46px;
+}
+.single-latest-blog {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    margin: 12px 0;
+    padding-top:15px;
+    padding-bottom: 15px;
+    transition: all 0.5s ease 0s;
+}
+.single-latest-blog:hover{
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.25);
+}
+.latest-blog-area .col-md-6.col-xs-12{
+    width: 100%;
+}
+.latest-blog-area .owl-buttons, .client-area .owl-buttons {
+    top: -84px;
+}
+.client-area .owl-theme .owl-controls .owl-buttons div {
+    background: #fff;
+}
+.date-comment h4 {
+    color: #303030;
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+.date-comment{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+    padding: 0px 15px;
+}
+.date-comment h5 {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+}
+.blog-content h4 a{
+    font-size: 18px;
+    color: #303030;
+    font-weight: 600;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.blog-content h4 a:hover, .continue-reading > a:hover{
+    color: #F05A66;
+}
+.blog-content, .continue-reading {
+    padding: 0 15px;
+    overflow: hidden;
+}
+.blog-content p, .continue-reading > a {
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.continue-reading > a{
+    color: #303030;
+    float: left;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    font-weight: 600;
+}
+.blog-icon{
+    float: right;
+}
+.blog-icon > a{
+    position: absolute;
+    right:50px;
+    bottom: 30px;
+    display: inline-block;
+}
+.blog-icon ul li{
+    display: inline-block;
+}
+.blog-icon ul li a{
+    color: #606060;
+    font-size: 18px;
+    margin-right: 25px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.blog-icon ul li a:hover{
+    color: #F05A66;
+}
+.blog-icon ul li:last-child{
+    margin-right: 0px;
+}
+
+.single-latest-blog-img {
+    /*padding-bottom: 26px;*/
+    width: 30%;
+    float: left;
+    height: inherit;
+    display: table;
+}
+.single-latest-blog-img > a {
+    display: table-cell;
+    vertical-align: middle;
+    /*display: inline-block;*/
+    line-height: inherit;
+    text-align: center;
+}
+
+.single-latest-blog-img > a > img{
+    width: 80%;
+    /*display: block;*/
+}
+
+.single-latest-blog-text{
+    width: 70%;
+    float: left;
+}
+
+.single-latest-blog-text h5 {
+    font-size: 14px;
+    color: #606060;
+    float: right;
+}
+
+.date-comment h4 {
+    color: #303030;
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+.date-comment{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+    padding: 0px 15px;
+}
+.date-comment h5 {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.date-comment {
+    margin-bottom: 17px;
+}
+
+.main_bottom span{padding-left:28px;padding-right: 28px; color:#333; font:12px "微软雅黑"; line-height:20px;}
+.main_bottom span:nth-child(1){ background: url(/resources/images/seat.png) no-repeat left center;background-size: 18px;}
+.main_bottom span:nth-child(2){ background: url(/resources/images/movie_ico.png) no-repeat left center;background-size: 18px;}
