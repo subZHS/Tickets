@@ -6,13 +6,13 @@
 <link href="/resources/css/rankListStyle.css" media="screen" rel="stylesheet" type="text/css" />
 <ul class="col-md-offset-1 col-md-2" id="member_leftmenu">
     <li class="dropdown">
-        <a onclick="window.location.href='/member/j${sessionScope.member.memberid}/orderList?orderState=All'" data-toggle="dropdown" class="selected">个人订单</a>
+        <a onclick="window.location.href='/member/j${sessionScope.member.memberid}/orderList?orderState=All'" data-toggle="dropdown" class="selected"><span class="user-f4">个人订单</span></a>
     </li>
-    <li class="dropdown">
+    <li class="dropdown user-f5">
         <a onclick="window.location.href='/member/j${sessionScope.member.memberid}/coupon'" data-toggle="dropdown">积分优惠券</a>
     </li>
     <li class="dropdown">
-        <a onclick="window.location.href='/member/j${sessionScope.member.memberid}/profile'" data-toggle="dropdown">基本信息</a>
+        <a onclick="window.location.href='/member/j${sessionScope.member.memberid}/profile'" data-toggle="dropdown"><span class="user-f4">基本信息</span></a>
     </li>
 
     <%--<li class="dropdown">--%>

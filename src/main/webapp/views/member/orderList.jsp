@@ -74,7 +74,7 @@
                                 %>
                                 <h3 style="text-align: center">this kind of order List is empty -_-</h3>
                                 <%}else{%>
-                                <table id="table-breakpoint">
+                                <table id="table-breakpoint-order">
                                     <thead>
                                     <tr>
                                         <%--将"下单时间"放到后面--%>
@@ -98,7 +98,7 @@
                                             String dateTime=((List<String>)request.getAttribute("dateTimeList")).get(i);
                                             List<OrderSeat> orderSeatList=((List<List<OrderSeat>>)request.getAttribute("orderSeatsList")).get(i);
                                     %>
-                                    <tr><td><p>订单号：<label class="orderid"><%=order.getOrderid()%></label></p>
+                                    <tr><td style="text-align: left"><p>订单号：<label class="orderid"><%=order.getOrderid()%></label></p>
                                             <a href="/publish/theater/j<%=theaterId%>/show/j<%=show.getShowid()%>#show_part"><img src="<%=show.getImage()%>" style="width:90px;float:left;margin-right: 10px" alt="" />
                                             <h5 style="margin-top: 20px"><%=show.getTitle()%></h5></a>
                                             <a href="/publish/theater/j<%=theaterId%>" class="btn btn-link" style="padding: 0"><%=theaterName%></a><br/>

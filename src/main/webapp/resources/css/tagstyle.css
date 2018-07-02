@@ -32,7 +32,7 @@
 }
 .nav-tabs {
     border-bottom: none;
-    margin: 1em auto;
+    margin: 1em 1em;
     text-align: center;
 }
 .nav-tabs > li {

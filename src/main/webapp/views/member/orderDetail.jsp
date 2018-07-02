@@ -41,6 +41,7 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
+<div style="display: block;height: 50px"></div>
 <%Order order=(Order)request.getAttribute("order");
 if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
 <div id="step"style="	width: 1000px;	margin: 50px auto;margin-bottom: 60px;"></div>

@@ -37,7 +37,7 @@
 
 .dropdown [data-toggle="dropdown"]:hover,
 .dropdown [data-toggle="dropdown"].selected {
-    background: cadetblue;
+    background: #7D9EC0;
 }
 
 #member_leftmenu {
@@ -56,4 +56,24 @@
     position: fixed;
     z-index: 99;
 
+}
+
+.user-f5{
+    text-align: center;
+    /*width: 5em; !*这个值是看最长能显示几个文字，如x，则为x em*!*/
+}
+.user-f4{
+    text-align: center;
+    letter-spacing:0.33em;  /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（6-5）/(5-1)=0.25em */
+    margin-left:5.3em;  /*同上*/
+}
+
+.the-man-f4{
+    text-align: center;
+    /*width: 4em;*/
+}
+.the-man-f2{
+    text-align: center;
+    letter-spacing:2em;
+    margin-left:5.8em;
 }

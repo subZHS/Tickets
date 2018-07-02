@@ -38,21 +38,21 @@
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>发布演出</span></div>
 
         <div class="row">
-            <form id="publishShow_form" action="#" enctype="multipart/form-data" style="font-size: 15px;margin-top: 15px">
+            <form id="publishShow_form" action="#" enctype="multipart/form-data" style="font-size: 15px;margin-top: 15px;width: 750px;">
 
                 <div style="display:none;position: fixed;top:70px;z-index: 3;width:61%" class="alert alert-danger" id="wrong_alert">错误！请进行一些更改。</div>
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <label>名称</label>
+                        <label>名&emsp;&emsp;称</label>
                         <input name="title" type="text" class="form-control" oninput="onInput()">
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <label>类型</label>
+                        <label>类&emsp;&emsp;型</label>
 
                         <div style="width: 100%">
-                        <select name="type" id="type" class="col-md-8" style="height: 40px;line-height: 50px;border-radius: 6%" onchange="onInput()">
+                        <select name="type" id="type" class="col-md-12" style="height: 40px;line-height: 50px;border-radius: 6%" onchange="onInput()">
                             <option value ="Movie">电影</option>
                             <option value ="MusicDrama">音乐剧</option>
                             <option value ="Drama">话剧</option>
@@ -66,11 +66,11 @@
                 </div>
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <label>海报</label>
+                        <label>海&emsp;&emsp;报</label>
 
                         <input name="image" type="file" id="image" style="display:none"/>
                         <div class="input-append">
-                            <input id="photoCover" class="input-large form-control" style="display:inline-block;width: 55%" type="text" disabled>
+                            <input id="photoCover" class="input-large form-control" style="display:inline-block;width: 86%" type="text" disabled>
                             <a class="btn btn-default" onclick="$('input[id=image]').click();">上传文件</a>
                         </div>
                         <script type="text/javascript">
@@ -89,27 +89,27 @@
                 </div>
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <label>简介</label>
+                        <label>简&emsp;&emsp;介</label>
                         <textarea name="description" class="form-control" oninput="onInput()"></textarea>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label style="margin-left: 2%">价格</label>
+                    <label style="margin-left: 2%">价&emsp;&emsp;格</label>
                     <div class="col-md-12">
 
-                        <div class="input-group col-md-8">
+                        <div class="input-group col-md-12">
                             <span class="input-group-addon">前排</span>
                             <input name="price1" type="number" class="form-control" min="0" oninput="onInput()">
                             <span class="input-group-addon">元</span>
                         </div>
 
-                        <div class="input-group col-md-8">
+                        <div class="input-group col-md-12">
                             <span class="input-group-addon">中间</span>
                             <input name="price2" type="number" class="form-control" min="0" oninput="onInput()">
                             <span class="input-group-addon">元</span>
                         </div>
 
-                        <div class="input-group col-md-8">
+                        <div class="input-group col-md-12">
                             <span class="input-group-addon">靠后</span>
                             <input name="price3" type="number" class="form-control" min="0" oninput="onInput()">
                             <span class="input-group-addon">元</span>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <input type="submit" class="btn btn-primary" value="确认发布">
+                        <input type="submit" class="btn btn-primary" value="确认发布" style="margin-left: 250px;width:250px">
                         <%--<span style="color: grey"> （必须经Tickets经理审核通过方能生效）</span>--%>
                     </div>
                 </div>

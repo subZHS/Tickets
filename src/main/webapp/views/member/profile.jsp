@@ -36,77 +36,84 @@
 
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>基本信息</span></div>
 
-        <form id="modify_form" action="#" class="col-md-8" style="font-size: 15px;margin-top: 15px">
-            <div class="alert alert-danger" style="display: none">错误！请进行一些更改。</div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label for="level" style="margin-right: 8%">会员等级</label>
-                    <span id="level" style="font-size: 22px;color: #C9302C;margin-right: 5%">lv ${level}</span>
-                    <span style="color: grey">（可享受 <span style="color: #C9302C">${discount}</span> 折优惠）</span>
+        <div id="user-left" style="width: 420px;float: left">
+            <form class="col-md-4" style="margin-top: 22px;width: 420px;">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label for="finalImg" style="margin-left: 42px">头像</label><br/>
+                        <img id="finalImg" src="${sessionScope.member.image}" style="border-radius: 0%" class="col-md-offset-1 col-md-10"/>
+                    </div>
                 </div>
-            </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label style="margin-right: 8%">积&emsp;&emsp;分</label>
-                    <span style="color: #C9302C;font-size:20px;margin-right: 5%">${sessionScope.member.points}</span>
-                    <a style="outline: none" class="btn btn-link" onclick="window.location.href='/member/j${sessionScope.member.memberid}/coupon'">>>可兑换优惠劵>></a>
+                <br/>
+                <div class="row form-group">
+                    <div>
+                        <a id="replaceImg" class="l-btn btn btn-primary" href="javascript:;" style="position:relative;left:20%;width: 60%">更换头像</a>
+                    </div>
                 </div>
-            </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label>邮&emsp;&emsp;箱</label>
-                    <input type="email" class="form-control" value="${sessionScope.member.memberid}" disabled="disabled">
+            </form>
+        </div>
+        <div id="user-right" style="width: 425px;float: right">
+            <form id="modify_form" action="#" class="col-md-8" style="font-size: 15px;margin-top: 15px;width: 425px;float: right;margin-right: 20px">
+                <div class="alert alert-danger" style="display: none">错误！请进行一些更改。</div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label for="level" style="margin-right: 8%">会员等级</label>
+                        <span id="level" style="font-size: 22px;color: #C9302C;margin-right: 5%">lv ${level}</span>
+                        <span style="color: grey">&emsp;（可享受 <span style="color: #C9302C">${discount}</span> 折优惠）</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label>昵&emsp;&emsp;称</label>
-                    <input name="name" type="text" class="form-control" value="${sessionScope.member.name}" oninput="onInput()">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label style="margin-right: 8%">积&emsp;&emsp;分</label>
+                        <span style="color: #C9302C;font-size:20px;margin-right: 5%">${sessionScope.member.points}</span>
+                        <a style="outline: none" class="btn btn-link" onclick="window.location.href='/member/j${sessionScope.member.memberid}/coupon'">>>可兑换优惠劵>></a>
+                    </div>
                 </div>
-            </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label for="sex" style="margin-right: 3%">性&emsp;&emsp;别</label><br>
-                    <%--拉长性别选择框长度--%>
-                    <select id="sex" style="width: 100%;height: 40px;border-radius: 6%">
-                        <%
-                            Member member=(Member)session.getAttribute("member");
-                        %>
-                        <option value ="0">男</option>
-                        <option value ="1" <%if(member.getSex()==1){%>selected<%}%>>女</option>
-                    </select>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label>邮&emsp;&emsp;箱</label>
+                        <input type="email" class="form-control" value="${sessionScope.member.memberid}" disabled="disabled">
+                    </div>
                 </div>
-            </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label>昵&emsp;&emsp;称</label>
+                        <input name="name" type="text" class="form-control" value="${sessionScope.member.name}" oninput="onInput()">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label for="sex" style="margin-right: 3%">性&emsp;&emsp;别</label><br>
+                        <%--拉长性别选择框长度--%>
+                        <select id="sex" style="width: 100%;height: 40px;border-radius: 6%">
+                            <%
+                                Member member=(Member)session.getAttribute("member");
+                            %>
+                            <option value ="0">男</option>
+                            <option value ="1" <%if(member.getSex()==1){%>selected<%}%>>女</option>
+                        </select>
+                    </div>
+                </div>
 
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label>年&emsp;&emsp;龄</label>
-                    <input name="age" type="number" class="form-control" value="${sessionScope.member.age}" oninput="onInput()">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label>年&emsp;&emsp;龄</label>
+                        <input name="age" type="number" class="form-control" value="${sessionScope.member.age}" oninput="onInput()">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <%--添加css样式--%>
-                    <input id="submit_modify" type="submit" class="btn btn-primary" value="修改" style="float: right;margin: 30px 0 auto  auto;min-width: 100px">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <%--添加css样式--%>
+                        <input id="submit_modify" type="submit" class="btn btn-primary" value="修改" style="float: right;margin: 30px 0 auto  auto;min-width: 100px">
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
 
-        <form class="col-md-4">
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label for="finalImg">头像</label><br/>
-                    <img id="finalImg" src="${sessionScope.member.image}" style="border-radius: 100%" class="col-md-offset-1 col-md-10"/>
-                </div>
-            </div>
-            <br/>
-            <div class="row form-group">
-                <div>
-                    <a id="replaceImg" class="l-btn btn btn-primary" href="javascript:;" style="position:relative;left:20%;width: 60%">更换头像</a>
-                </div>
-            </div>
-        </form>
+        </div>
+
+
+
     </div>
 </div>
 

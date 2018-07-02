@@ -70,7 +70,7 @@
                                 %>
                                 <h3 style="text-align: center">this kind of movie List is empty -_-</h3>
                                 <%}else{%>
-                                <table id="table-breakpoint">
+                                <table id="table-breakpoint-show">
                                     <thead>
                                     <tr style="text-align: center">
                                         <th>演出</th>
@@ -86,10 +86,10 @@
                                         for(Show show:showList){
                                     %>
                                     <tr>
-                                        <td><img style="width: 120px;position: relative;left: 15px" src="<%=show.getImage()%>" alt="image"/> <h5 style="text-align: center"><%=show.getTitle()%></h5></td>
+                                        <td style="text-align: left"><img style="width: 120px;position: relative;left: 15px" src="<%=show.getImage()%>" alt="image"/> <h5 style="text-align: center"><%=show.getTitle()%></h5></td>
                                         <td><%=ShowType.values()[show.getType()].name()%></td>
                                         <td><%=show.getActor()%></td>
-                                        <td style="max-width: 180px;word-break: break-all"><%=show.getDescription()%></td>
+                                        <td style="max-width: 180px;word-break: break-all;text-align: left"><%=show.getDescription()%></td>
                                         <td class="w3-list-info">
                                             <ul>
                                                 <li>前排：¥<%=show.getPrice1()%></li>

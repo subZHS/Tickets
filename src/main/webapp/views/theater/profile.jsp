@@ -33,14 +33,14 @@
         <form action="#" class="col-md-8" id="modifyTheater" style="font-size: 15px;margin-top: 15px">
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label style="margin-right: 8%">总收入</label>
+                    <label style="margin-right: 8%">总&nbsp;收&nbsp;&nbsp;入</label>
                     <span style="color: #C9302C;font-size:22px;margin-right: 5%">l000</span>
                     <a href="/theater/j${sessionScope.theater.theaterid}/showList" style="outline: none" class="btn btn-link">>>查看收入详情>></a>
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label style="margin-right: 8%">场馆号</label>
+                    <label style="margin-right: 8%">场&nbsp;馆&nbsp;&nbsp;号</label>
                     <span style="color: #C9302C;font-family: georgia;font-size:22px;margin-right: 5%">${sessionScope.theater.theaterid}</span>
                     <span>（用于登录）</span>
                 </div>
@@ -49,7 +49,8 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <i style="font-size: 25px" class="fa fa-envelope" aria-hidden="true"></i> 邮箱</label>
+                        <%--<i style="font-size: 25px" class="fa fa-envelope" aria-hidden="true"></i>--%>
+                        邮&emsp;&emsp;箱</label>
                     <input name="email" type="email" class="form-control" disabled value="${sessionScope.theater.email}">
                 </div>
             </div>
@@ -62,16 +63,16 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <i style="font-size: 25px" class="fa fa-map-marker" aria-hidden="true"></i>
-                        地址</label>
+                        <%--<i style="font-size: 25px" class="fa fa-map-marker" aria-hidden="true"></i>--%>
+                        地&emsp;&emsp;址</label>
                     <input name="location" type="text" class="form-control" oninput="onInput()" value="${sessionScope.theater.location}">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i>
-                        电话
+                        <%--<i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i>--%>
+                        电&emsp;&emsp;话
                     </label>
                     <input name="phonenum" type="number" class="form-control" oninput="onInput()" value="${sessionScope.theater.phonenum}">
                 </div>
@@ -79,7 +80,7 @@
             <div class="row form-group">
                 <div class="col-md-12">
                     <label>
-                        <i style="font-size: 25px" class="fa fa-user" aria-hidden="true"></i>
+                        <%--<i style="font-size: 25px" class="fa fa-user" aria-hidden="true"></i>--%>
                         收款账号
                     </label>
                     <input name="alipayid" type="text" class="form-control" oninput="onInput()" value="${sessionScope.theater.alipayid}">
@@ -87,7 +88,8 @@
                 </div>
             </div>
             <div class="row form-group" style="font-family: Monospaced">
-                <label style="margin-left:3%;margin-right: 3%;font-weight: 600">座位情况</label>
+                <%--<label style="margin-left:3%;margin-right: 3%;font-weight: 600">--%>
+                    <label>座位情况</label>
                 <div class="col-md-12">
                     <textarea style="width:66%;float: left" name="seat" class="form-control" rows="10" cols="10" oninput="onInput()">${sessionScope.theater.seat}</textarea>
                     <div style="width: 27%;float: right;color: grey">
@@ -167,8 +169,8 @@
         <form class="col-md-4">
             <div class="row form-group">
                 <div class="col-md-12">
-                    <label for="finalImg">图片</label><br/>
-                    <img id="finalImg" src="${sessionScope.theater.image}" class="col-md-offset-1 col-md-10" style="border-radius: 100%"/>
+                    <label for="finalImg" style="margin-left: 35px">图片</label><br/>
+                    <img id="finalImg" src="${sessionScope.theater.image}" class="col-md-offset-1 col-md-10" style="border-radius: 0%"/>
                 </div>
             </div>
             <br/>

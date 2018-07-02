@@ -89,7 +89,7 @@ if(showList.size()==0){%>
 </div>
 
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
-    <div class="container">
+    <div class="container" style="margin-left:0px;padding-left:0px">
         <div class="row">
             <div class="col-md-2">
                 <img style="height: 200px" src="${show.image}">

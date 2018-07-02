@@ -49,11 +49,11 @@
 
                 <%if(request.getSession().getAttribute("userType")!=null){
                     if(request.getSession().getAttribute("userType").equals("member")){%>
-                <img src="${sessionScope.member.image}" style="width: 49px;height: 49px;border-radius: 100%"/> &nbsp;${sessionScope.member.name}
+                <img src="${sessionScope.member.image}" style="width: 49px;height: 49px;border-radius: 0%"/> &nbsp;${sessionScope.member.name}
                     <%}else if(request.getSession().getAttribute("userType").equals("theater")){%>
-                <img src="${sessionScope.theater.image}" style="width: 49px;height: 49px;border-radius: 100%"/> &nbsp;${sessionScope.theater.name}
+                <img src="${sessionScope.theater.image}" style="width: 49px;height: 49px;border-radius: 0%"/> &nbsp;${sessionScope.theater.name}
                     <%}else if(request.getSession().getAttribute("userType").equals("manager")){%>
-                <img src="/resources/images/not-head.png" style="width: 49px;height: 49px;border-radius: 100%"/> &nbsp;${sessionScope.manager.managerid}
+                <img src="/resources/images/not-head.png" style="width: 49px;height: 49px;border-radius: 0%"/> &nbsp;${sessionScope.manager.managerid}
                 <%}
                 }else{%>
                 <img src="/resources/images/not-head.png"/>
@@ -90,11 +90,8 @@
             </div>
 
             <div class="search" onclick="search()"></div>
-<%--<<<<<<< HEAD--%>
             <%--<div class="search_input"><input id="search_input" type="text" placeholder="请输入你要搜索的内容" /></div>--%>
-<%--=======--%>
             <div class="search_input"><input id="search_input" type="text" placeholder="请输入你要搜索的内容" onfocus="listenEnterPress($(this))"/></div>
-<%-->>>>>>> b42ba70cdad2ab6984cfaf0872c498eab05eafe2--%>
             <%--<div class="IT"><a href="#" class="text-zp">搜索方向</a>--%>
             <%--<dl>--%>
             <%--<dd><a href="#">演出</a></dd>--%>

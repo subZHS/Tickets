@@ -6,10 +6,10 @@
 <%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<meta charset="utf-8" />
+<meta charset="utf-8"/>
 <!-- Animate.css -->
 <link rel="stylesheet" href="/resources/css/animate.css">
-<link  href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 <link href="/resources/css/navstyle.css" rel="stylesheet" type="text/css"/>
 <link href="/resources/css/jquery.step.css" rel="stylesheet" type="text/css"/>
 <link href="/resources/css/tagstyle.css" rel="stylesheet" type="text/css"/>
@@ -20,14 +20,15 @@
 <script src="/resources/js/bootstrap.min.js"></script>
 <script src="/resources/js/jquery.step.min.js"></script>
 <style>
-    .warp{
+    .warp {
         height: 60px;
         line-height: 60px;
         text-align: center;
         font-size: 30px;
         font-family: "微软雅黑";
     }
-    .warp strong{
+
+    .warp strong {
         width: 60px;
         display: inline-block;
         text-align: center;
@@ -42,8 +43,9 @@
 <jsp:include page="/views/header.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
+<div style="display: block;height: 50px"></div>
 
-<div id="step"style="	width: 1000px;	margin: 50px auto;margin-bottom: 60px;"></div>
+<div id="step" style="width: 1000px;margin: 50px auto;margin-bottom: 60px;"></div>
 
 <div class="w3_content_agilleinfo_inner row" style="border-top: none">
     <div class="alert alert-danger">
@@ -63,11 +65,14 @@
             <div id="myTabContent" class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
                     <div class="agile-news-table">
-                        <%SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-                        Order order=(Order)request.getAttribute("order");
-                        List<OrderSeat> orderSeatList=(List<OrderSeat>)request.getAttribute("orderSeatList");%>
+                        <%
+                            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                            Order order = (Order) request.getAttribute("order");
+                            List<OrderSeat> orderSeatList = (List<OrderSeat>) request.getAttribute("orderSeatList");
+                        %>
                         <div class="w3ls-news-result">
-                            <h4>下单时间：<%=sdf.format(order.getTime())%>&nbsp;&nbsp; 订单号：<label style="color: #C9302C">${order.orderid}</label></h4>
+                            <h4>下单时间：<%=sdf.format(order.getTime())%>&nbsp;&nbsp; 订单号：<label
+                                    style="color: #C9302C">${order.orderid}</label></h4>
                         </div>
                         <table id="table-breakpoint">
                             <thead>
@@ -83,31 +88,38 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="/public/theater/j${theaterId}/show/j${show.showid}"><img src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt="" />
-                                        <h5 style="margin-top: 20px">${show.title}</h5></a>
-                                    <a href="/public/theater/j${theaterId}" class="btn btn-link" style="padding: 0">${theaterName}</a><br/>
+                                <td><a href="/public/theater/j${theaterId}/show/j${show.showid}"><img
+                                        src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt=""/>
+                                    <h5 style="margin-top: 20px">${show.title}</h5></a>
+                                    <a href="/public/theater/j${theaterId}" class="btn btn-link"
+                                       style="padding: 0">${theaterName}</a><br/>
                                     <span>${showTimeStr}</span>
                                 </td>
-                                <td><%if(order.isOrdertype()){%>
+                                <td><%if (order.isOrdertype()) {%>
                                     选座购买
-                                    <%}else{%>
+                                    <%} else {%>
                                     不选座购买<%}%></td>
-                                <td><%if(orderSeatList.size()!=0){
-                                    for(OrderSeat orderSeat:orderSeatList){%>
+                                <td><%
+                                    if (orderSeatList.size() != 0) {
+                                        for (OrderSeat orderSeat : orderSeatList) {
+                                %>
                                     <%=orderSeat.getSeatRow()%>排<%=orderSeat.getSeatColumn()%>座<br/>
-                                    <%}}else{%>
+                                    <%
+                                        }
+                                    } else {
+                                    %>
                                     待定
                                     <%}%>
                                 </td>
                                 <td>${order.number}</td>
                                 <td>${order.discount}</td>
-                                <td><%if(order.getCoupontype()==0){%>
+                                <td><%if (order.getCoupontype() == 0) {%>
                                     未使用
-                                    <%}else if(order.getCoupontype()==1){%>
+                                    <%} else if (order.getCoupontype() == 1) {%>
                                     满10减1
-                                    <%}else if(order.getCoupontype()==2){%>
+                                    <%} else if (order.getCoupontype() == 2) {%>
                                     满30减5
-                                    <%}else if(order.getCoupontype()==3){%>
+                                    <%} else if (order.getCoupontype() == 3) {%>
                                     满50减10
                                     <%}%>
                                 </td>
@@ -126,32 +138,33 @@
 <br/>
 <div class="w3_content_agilleinfo_inner" style="border-top: none">
     <%--<a href="#" class="btn btn-primary col-md-offset-10">确认支付</a>--%>
-        <form id="pay_form" action="#" style="margin-left: 25%;width: 50%;margin-bottom: 0;padding-bottom: 0">
-            <div style="display: none" class="alert alert-danger" id="wrong_alert">错误！请进行一些更改。</div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label>支付账号</label>
-                    <input name="alipayid" type="text" class="form-control" oninput="onInput()">
-                </div>
+    <form id="pay_form" action="#" style="margin-left: 25%;width: 50%;margin-bottom: 0;padding-bottom: 0">
+        <div style="display: none" class="alert alert-danger" id="wrong_alert">错误！请进行一些更改。</div>
+        <div class="row form-group">
+            <div class="col-md-12">
+                <label>支付账号</label>
+                <input name="alipayid" type="text" class="form-control" oninput="onInput()">
             </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label>支付密码</label>
-                    <input name="password" type="password" class="form-control" oninput="onInput()">
-                </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-12">
+                <label>支付密码</label>
+                <input name="password" type="password" class="form-control" oninput="onInput()">
             </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <label>支付金额</label>
-                    <label style="margin-left: 5%"><span style="font-size: 25px;font-family: georgia;color: #C9302C;">￥${order.price}</span></label>
-                </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-12">
+                <label>支付金额</label>
+                <label style="margin-left: 5%"><span
+                        style="font-size: 25px;font-family: georgia;color: #C9302C;">￥${order.price}</span></label>
             </div>
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <input type="submit" class="btn btn-primary" value="确认支付">
-                </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-primary" value="确认支付">
             </div>
-        </form>
+        </div>
+    </form>
 </div>
 
 <%--底线--%>
@@ -170,24 +183,24 @@
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         <%Date deadTime=order.getTime();
         Date curDate=new Date();
         long times=(deadTime.getTime()+5*60*1000-curDate.getTime())/1000;//单位是秒
         %>
         var times = <%=times%>; // 15*60秒
-        countTime = setInterval(function() {
+        countTime = setInterval(function () {
             times = --times < 0 ? 0 : times;
-            var minute = Math.floor(times/60).toString();
+            var minute = Math.floor(times / 60).toString();
 
-            if(minute.length <= 1) {
+            if (minute.length <= 1) {
                 minute = "0" + minute;
             }
             var ms = Math.floor(times % 60).toString();
-            if(ms.length <= 1) {
+            if (ms.length <= 1) {
                 ms = "0" + ms;
             }
-            if(times <= 0) {
+            if (times <= 0) {
                 clearInterval(countTime);
                 $.ajax({
                     type: 'post', url: '/member/j${sessionScope.member.memberid}/order/j${order.orderid}/cancelOrder',
@@ -211,8 +224,8 @@
 </script>
 <script>
     function checkFullInput(form, alert) {
-        for(var i=0;i<$(form+" input").length;i++) {
-            if ($(form+" input").eq(i).val() == "") {
+        for (var i = 0; i < $(form + " input").length; i++) {
+            if ($(form + " input").eq(i).val() == "") {
                 $(alert).html("请完善表单信息").show();
                 return false;
             }
@@ -225,7 +238,7 @@
     }
 
     $('#pay_form').submit(function () {
-        if(!checkFullInput('#pay_form','#wrong_alert')){
+        if (!checkFullInput('#pay_form', '#wrong_alert')) {
             return false;
         }
         $.ajax({

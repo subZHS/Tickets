@@ -1,16 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link href="/resources/css/leftmenu.css" media="screen" rel="stylesheet" type="text/css" />
 <ul class="col-md-offset-1 col-md-2" id="theater_leftmenu">
-    <li class="dropdown">
+    <li class="dropdown the-man-f4">
         <a onclick="window.location.href='/theater/j${sessionScope.theater.theaterid}/showList?showState=All'" href="javascript:;" data-toggle="dropdown" class="selected">演出列表</a>
     </li>
     <li class="dropdown">
-        <a onclick="window.location.href='/theater/j${sessionScope.theater.theaterid}/checkTickets'" href="javascript:;" data-toggle="dropdown">检票</a>
+        <a onclick="window.location.href='/theater/j${sessionScope.theater.theaterid}/checkTickets'" href="javascript:;" data-toggle="dropdown"><span class=" the-man-f2">检票</span></a>
     </li>
-    <li class="dropdown">
+    <li class="dropdown the-man-f4">
         <a onclick="window.location.href='/theater/j${sessionScope.theater.theaterid}/newShow'" href="javascript:;" data-toggle="dropdown">发布演出</a>
     </li>
-    <li class="dropdown">
+    <li class="dropdown the-man-f4">
         <a onclick="window.location.href='/theater/j${sessionScope.theater.theaterid}/profile'" href="javascript:;" data-toggle="dropdown">场馆信息</a>
     </li>
 
