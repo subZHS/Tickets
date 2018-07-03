@@ -63,7 +63,7 @@
                     <label>
                         <i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i> 电话
                     </label>
-                    <input name="phonenum" type="number" class="form-control" oninput="onInput()">
+                    <input name="phonenum" type="text" class="form-control" oninput="onInput()">
                 </div>
             </div>
             <div class="row form-group">

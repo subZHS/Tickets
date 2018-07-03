@@ -67,7 +67,7 @@ if(showList.size()==0){%>
                 <%Show show =(Show) request.getAttribute("show");
                     for(Show show1:showList){%>
                 <li role="presentation" <%if(show1.getShowid()==show.getShowid()){%> class="active"<%}%>>
-                    <a href="/publish/theater/j${theater.theaterid}/show/j<%=show1.getShowid()%>" role="tab"><%=show1.getTitle()%></a></li>
+                    <a href="/publish/theater/j${theater.theaterid}/show/j<%=show1.getShowid()%>#show_part" role="tab"><%=show1.getTitle()%></a></li>
                 <%}%>
             </ul>
         </div>
@@ -81,7 +81,7 @@ if(showList.size()==0){%>
                 String date=(String)request.getAttribute("date");
                 for(String dateStr:dateStrList){%>
                 <li role="presentation" <%if(dateStr.equals(date)){%> class="active"<%}%>>
-                    <a href="/publish/theater/j${theater.theaterid}/show/j${show.showid}?date=<%=dateStr%>" role="tab"><%=dateStr%></a></li>
+                    <a href="/publish/theater/j${theater.theaterid}/show/j${show.showid}?date=<%=dateStr%>#show_part" role="tab"><%=dateStr%></a></li>
                 <%}%>
             </ul>
         </div>

@@ -51,22 +51,25 @@ public class PublishShowController {
     public boolean publishShow(@PathVariable String theaterid, HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) throws IOException, ParseException {
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
 
-        MultipartFile image = multipartRequest.getFile("image");
-        //保存图片
-        String imageName=saveImage(request,image,theaterid,ShowType.valueOf(request.getParameter("type")),request.getParameter("title"));
-        if(imageName==null){
-            return false;
-        }
         Show show=new Show();
         show.setTheaterid(theaterid);
         show.setTitle(request.getParameter("title"));
         show.setType(ShowType.valueOf(request.getParameter("type")).ordinal());
         show.setActor(request.getParameter("actor"));
         show.setDescription(request.getParameter("description"));
-        show.setImage(imageName);
         show.setPrice1(Integer.valueOf(request.getParameter("price1")));
         show.setPrice2(Integer.valueOf(request.getParameter("price2")));
         show.setPrice3(Integer.valueOf(request.getParameter("price3")));
+
+        MultipartFile image = multipartRequest.getFile("image");
+        //保存图片
+//        String imageName="/resources/images/upload/theater/"+theaterid+"/"+ShowType.valueOf(request.getParameter("type"))
+//                + "/" +request.getParameter("title")+".jpg";
+        String imageName=saveImage(request,image,theaterid,ShowType.valueOf(request.getParameter("type")),request.getParameter("title"));
+        if(imageName==null){
+            return false;
+        }
+        show.setImage(imageName);
 
         //设置开票状态
         java.util.Date curDate = new java.util.Date();
@@ -130,7 +133,7 @@ public class PublishShowController {
             //修改图片路径
             String filePath = relativePath + "/" + fileName;
             return filePath;
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
