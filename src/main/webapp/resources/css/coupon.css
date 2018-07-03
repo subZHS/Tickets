@@ -1,0 +1,144 @@
+#div-couponCard {
+    /*margin: 100px 500px;*/
+    width: 500px;
+    margin-top: 40px;
+}
+
+/*-----------------------------------------------------------------*/
+.coupon {
+    position: relative;
+    background: #4f97d2;
+    color: #fff;
+    width: 100%;
+    height: 120px;
+    line-height: 25px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.coupon-diabled {
+    background: #c3c3c3;
+    color: #666;
+}
+
+.coupon:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.coupon-money .sum {
+    font-size: 25px;
+}
+
+.coupon-left {
+    float: left;
+    text-align: left;
+    width: 60%;
+    font-size: 12px;
+    background: url(./circle-border-left.png) left center no-repeat;
+}
+
+.coupon-right {
+    float: right;
+    text-align: center;
+    width: 40%;
+    font-size: 14px;
+    background: url(./circle-border-right.png) right center no-repeat;
+}
+
+.coupon-inner {
+    padding: 20px 30px;
+    height: 120px;
+    position: relative;
+}
+
+.coupon-right .coupon-inner {
+    border-left: 2px dashed rgba(255, 255, 255, .5);
+}
+
+.coupon-money {
+    margin-top: 15px;
+}
+
+.coupon-time {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.coupon-circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    position: absolute;
+    left: -9px;
+    border-radius: 50%
+}
+
+.coupon-circle.up {
+    top: -8px;
+}
+
+.coupon-circle.bottom {
+    bottom: -8px;
+}
+
+.coupon-light {
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    height: 250px;
+    width: 100%;
+    background: rgba(255, 255, 255, .2);
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    z-index: 90;
+}
+
+/*---------锯齿效果---------*/
+.coupon {
+    width: 698px;
+    background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #4f97d2 4px);
+    background-size: 12px 8px;
+    background-position: -5px 10px;
+}
+
+.coupon:before {
+    background-color: #4f97d2;
+    left: 5px;
+    right: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.get-coupon {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-style: inherit;
+    z-index: 99;
+}
+
+.ownNum {
+    float: right;
+    margin-right: -5px;
+    margin-top: -20px;
+    font-size: 24px;
+    color: #edd040;
+}
+
+.ownLabel {
+    float: right;
+    margin-right: 0px;
+    margin-top: -20px;
+    font-size: 12px
+}

@@ -1,17 +1,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<meta charset="utf-8" />
+<meta charset="utf-8"/>
 <!-- Animate.css -->
 <link rel="stylesheet" href="/resources/css/animate.css">
-<link href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/resources/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="/resources/css/font-awesome.min.css">
-<link href="/resources/css/table.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/resources/css/table.css" media="screen" rel="stylesheet" type="text/css"/>
 <!-- jQuery -->
 <script src="/resources/js/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="/resources/js/bootstrap.min.js"></script>
 
-<link href="/resources/css/public.css"rel="stylesheet" type="text/css" />
+<link href="/resources/css/public.css" rel="stylesheet" type="text/css"/>
+<link href="/resources/css/coupon.css" rel="stylesheet" type="text/css"/>
 
 <head>
     <title>Login</title>
@@ -39,12 +40,17 @@
                     <div id="myTabContent" class="tab-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
                             <div class="agile-news-table">
-                                <div class="w3ls-news-result">
+                                <div class="w3ls-news-result" style="margin-top: 35px">
                                     <h4>剩余积分:
                                         <span style="color: #C9302C;font-size: 22px"> ${sessionScope.member.points} </span>
                                         <%--消费金额*10的颜色，使其更明显--%>
-                                        <span style="color: grey">（每消费一次，您的积分会增加<span style="color: orange;">消费金额*10</span>)</span></h4>
-                            </div>
+                                        <span style="color: grey">（每消费一次，您的积分会增加<span
+                                                style="color: #C9302C;">消费金额*10</span>)</span></h4>
+                                </div>
+
+
+
+                            <%--
                                 <table id="table-breakpoint">
                                     <thead>
                                     <tr>
@@ -64,9 +70,13 @@
                                         <td>减 1 元</td>
                                         <td>150 积分</td>
                                         <td> ${sessionScope.member.coupon1} </td>
-                                        <td><input type="number" value="1" min="1" class="form-control" style="max-width: 100px"></td>
-                                        <td class="w3-list-info"><button class="btn btn-primary">
-                                            <i class="icon-plus icon-large"></i> 兑换</button></td>
+                                        <td><input type="number" value="1" min="1" class="form-control"
+                                                   style="max-width: 100px"></td>
+                                        <td class="w3-list-info">
+                                            <button class="btn btn-primary">
+                                                <i class="icon-plus icon-large"></i> 兑换
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>优惠券2</td>
@@ -74,9 +84,13 @@
                                         <td>减 5 元</td>
                                         <td>550 积分</td>
                                         <td> ${sessionScope.member.coupon2} </td>
-                                        <td><input type="number" value="1" min="1" class="form-control" style="max-width: 100px"></td>
-                                        <td class="w3-list-info"><button class="btn btn-primary">
-                                            <i class="icon-plus icon-large"></i> 兑换</button></td>
+                                        <td><input type="number" value="1" min="1" class="form-control"
+                                                   style="max-width: 100px"></td>
+                                        <td class="w3-list-info">
+                                            <button class="btn btn-primary">
+                                                <i class="icon-plus icon-large"></i> 兑换
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>优惠券3</td>
@@ -84,20 +98,124 @@
                                         <td>减 10 元</td>
                                         <td>1050 积分</td>
                                         <td> ${sessionScope.member.coupon3} </td>
-                                        <td><input type="number" value="1" min="1" class="form-control" style="max-width: 100px"></td>
-                                        <td class="w3-list-info"><button class="btn btn-primary">
-                                            <i class="icon-plus icon-large"></i> 兑换</button></td>
+                                        <td><input type="number" value="1" min="1" class="form-control"
+                                                   style="max-width: 100px"></td>
+                                        <td class="w3-list-info">
+                                            <button class="btn btn-primary">
+                                                <i class="icon-plus icon-large"></i> 兑换
+                                            </button>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
+                                --%>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="div-couponCard">
+
+            <%--coupon卡片样式--%>
+            <!--可用-->
+            <div class="coupon">
+                <div class="coupon-left">
+                    <div class="coupon-inner">
+                        <div class="coupon-money">
+                            <span>¥</span>
+                            <span class="sum">1.00</span>
+                            <span class="ownNum">${sessionScope.member.coupon1}</span>
+                            <span class="ownLabel">已拥有：</span>
+                        </div>
+                        <div class="coupon-condition">
+                            <p>满10.00可用</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coupon-right">
+                    <div class="coupon-inner">
+                        <div class="coupon-time">
+                            150积分<br>
+                        </div>
+                        <div class="w3-list-info">
+                            <button class="btn btn-default get-coupon">兑换</button>
+
+                        </div>
+                        <i class="coupon-circle up"></i>
+                        <i class="coupon-circle bottom"></i>
+                    </div>
+                </div>
+                <%--<div class="coupon-light"></div>--%>
+            </div>
+
+            <div class="coupon">
+                <div class="coupon-left">
+                    <div class="coupon-inner">
+                        <div class="coupon-money">
+                            <span>¥</span>
+                            <span class="sum">5.00</span>
+                            <span class="ownNum">${sessionScope.member.coupon2}</span>
+                            <span class="ownLabel">已拥有：</span>
+                        </div>
+                        <div class="coupon-condition">
+                            <p>满30.00可用</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coupon-right">
+                    <div class="coupon-inner">
+                        <div class="coupon-time">
+                            550积分<br>
+                        </div>
+                        <div class="w3-list-info">
+                            <button class="btn btn-default get-coupon">兑换</button>
+
+                        </div>
+                        <i class="coupon-circle up"></i>
+                        <i class="coupon-circle bottom"></i>
+                    </div>
+                </div>
+                <%--<div class="coupon-light"></div>--%>
+            </div>
+
+
+            <div class="coupon">
+                <div class="coupon-left">
+                    <div class="coupon-inner">
+                        <div class="coupon-money">
+                            <span>¥</span>
+                            <span class="sum">10.00</span>
+                            <span class="ownNum">${sessionScope.member.coupon3}</span>
+                            <span class="ownLabel">已拥有：</span>
+                        </div>
+                        <div class="coupon-condition">
+                            <p>满50.00可用</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coupon-right">
+                    <div class="coupon-inner">
+                        <div class="coupon-time">
+                            1050积分<br>
+                        </div>
+                        <div class="w3-list-info">
+                            <button class="btn btn-default get-coupon">兑换</button>
+                        </div>
+                        <i class="coupon-circle up"></i>
+                        <i class="coupon-circle bottom"></i>
+                    </div>
+                </div>
+                <%--<div class="coupon-light"></div>--%>
+            </div>
+
+
+        </div>
+
     </div>
 </div>
+
+
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -124,22 +242,23 @@
     var index;
     var number;
     $(".w3-list-info button").click(function () {
-        index=$(this).index(".w3-list-info button");
-        number=$("table input[type='number']").eq(index).val();
+        index = $(this).index(".w3-list-info button");
+        // number = $("table input[type='number']").eq(index).val();
+        number = 1;
         $("#myModal").modal('show');
     });
 
     $("#coupon_sure").click(function () {
         $.ajax({
             type: 'get', url: '/member/j${sessionScope.member.memberid}/coupon/exchange',
-            data: {"couponType":index+1,"number":number},
+            data: {"couponType": index + 1, "number": number},
             cache: false, dataType: 'json',
             success: function (success) {
-                if(success){
+                if (success) {
                     //添加兑换成功的提示
                     alert("兑换成功！");
-                    window.location.href="/member/j${sessionScope.member.memberid}/coupon";
-                }else{
+                    window.location.href = "/member/j${sessionScope.member.memberid}/coupon";
+                } else {
                     alert("您的积分不足，兑换失败");
                 }
             }
