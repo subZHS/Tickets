@@ -240,12 +240,12 @@ public class LoginController {
             showTypeArray[1]='\u5f71';//电影
         }else if(showType==1) {
             showTypeArray=new char[3];
-            showTypeArray[0]='\u97f3';
-            showTypeArray[1]='\u4e50';
+            showTypeArray[0]='\u821e';
+            showTypeArray[1]='\u53f0';
             showTypeArray[2]='\u5267';//音乐剧
         }else if(showType==2) {
             showTypeArray=new char[2];
-            showTypeArray[0]='\u8bdd';
+            showTypeArray[0]='\u620f';
             showTypeArray[1]='\u5267';//话剧
         }else if(showType==3){
             showTypeArray=new char[2];

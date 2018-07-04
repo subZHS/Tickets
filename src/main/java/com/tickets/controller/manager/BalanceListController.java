@@ -57,9 +57,9 @@ public class BalanceListController {
             if(showType==0){
                 showTypeStr="电影";
             }else if(showType==1) {
-                showTypeStr="音乐剧";
+                showTypeStr="舞台剧";
             }else if(showType==2) {
-                showTypeStr="话剧";
+                showTypeStr="戏剧";
             }else if(showType==3){
                 showTypeStr="舞蹈";
             }else if(showType==4){

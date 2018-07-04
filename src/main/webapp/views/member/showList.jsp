@@ -40,9 +40,9 @@
                 <li role="presentation" <%if(request.getParameter("showType").equals("Movie")){%> class="active"<%}%>>
                     <a href="/publish/showList?isOpen=${isOpen}&showType=Movie&orderType=${orderType}" role="tab">电影</a></li>
                 <li role="presentation" <%if(request.getParameter("showType").equals("MusicDrama")){%> class="active"<%}%>>
-                    <a href="/publish/showList?isOpen=${isOpen}&showType=MusicDrama&orderType=${orderType}" role="tab">音乐剧</a></li>
+                    <a href="/publish/showList?isOpen=${isOpen}&showType=MusicDrama&orderType=${orderType}" role="tab">舞台剧</a></li>
                 <li role="presentation" <%if(request.getParameter("showType").equals("Drama")){%> class="active"<%}%>>
-                    <a href="/publish/showList?isOpen=${isOpen}&showType=Drama&orderType=${orderType}" role="tab">话剧</a></li>
+                    <a href="/publish/showList?isOpen=${isOpen}&showType=Drama&orderType=${orderType}" role="tab">戏剧</a></li>
                 <li role="presentation" <%if(request.getParameter("showType").equals("Dance")){%> class="active"<%}%>>
                     <a href="/publish/showList?isOpen=${isOpen}&showType=Dance&orderType=${orderType}" role="tab">舞蹈</a></li>
                 <li role="presentation" <%if(request.getParameter("showType").equals("Sports")){%> class="active"<%}%>>

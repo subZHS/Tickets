@@ -54,8 +54,8 @@
                         <div style="width: 100%">
                         <select name="type" id="type" class="col-md-12" style="height: 40px;line-height: 50px;border-radius: 6%" onchange="onInput()">
                             <option value ="Movie">电影</option>
-                            <option value ="MusicDrama">音乐剧</option>
-                            <option value ="Drama">话剧</option>
+                            <option value ="MusicDrama">舞台剧</option>
+                            <option value ="Drama">戏剧</option>
                             <option value ="Dance">舞蹈</option>
                             <option value ="Sports">体育比赛</option>
                             <option value ="Concert">演唱会</option>
