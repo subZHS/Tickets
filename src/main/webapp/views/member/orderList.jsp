@@ -72,7 +72,7 @@
                                 <%List<Order> orderList=(List<Order>)request.getAttribute("orderList");
                                     if(orderList==null||orderList.size()==0){
                                 %>
-                                <h3 style="text-align: center">this kind of order List is empty -_-</h3>
+                                <h3 id="noOrderTip" style="text-align: center;font-weight: 500;font-size: 18px">您当前没有这种状态的订单 -_-</h3>
                                 <%}else{%>
                                 <table id="table-breakpoint-order">
                                     <thead>
@@ -174,6 +174,12 @@
 <jsp:include page="/views/bottomLine.jsp" flush="true">
     <jsp:param name="index" value="0"/>
 </jsp:include>
+
+<script>
+    if($("#myTab li").eq(1).hasClass("active")){
+        $("#noOrderTip").html("您还没有任何购票记录 -_- <a href='/publish/showList?isOpen=true&showType=All&orderType=heat' style='font-size: 18px' class='btn btn-link'>去买票</a>");
+    }
+</script>
 
 <script>
     var refundOrderIndex;

@@ -70,7 +70,7 @@
         <%
             List<Show> showList = (List<Show>)request.getAttribute("showList");
             if(showList.size()==0){%>
-        <h3 style="text-align: center">Sorry, there is not this kind of show list now -_-</h3>
+        <h3 style="text-align: center;font-weight: 400;font-size: 20px">暂无此类型的演出，请耐心等候 -_-</h3>
         <%}else{
             List<String> showTypeList=(List<String>)request.getAttribute("showTypeList");
             List<Integer> seatNumList=(List<Integer>)request.getAttribute("seatNumList");

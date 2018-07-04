@@ -36,11 +36,11 @@
 
         <div class="bottom_text" style="width: 100%;margin-top: 10px"><span>基本信息</span></div>
 
-        <div id="user-left" style="width: 420px;float: left">
-            <form class="col-md-4" style="margin-top: 22px;width: 420px;">
+        <div id="user-left" style="width: 460px;float: left;margin-left: -55px">
+            <form class="col-md-4" style="margin-top: 22px;width: 460px;">
                 <div class="row form-group">
                     <div class="col-md-12">
-                        <label for="finalImg" style="margin-left: 42px">头像</label><br/>
+                        <label for="finalImg" style="margin-left: 50px">头像</label><br/><br/>
                         <img id="finalImg" src="${sessionScope.member.image}" style="border-radius: 0%" class="col-md-offset-1 col-md-10"/>
                     </div>
                 </div>

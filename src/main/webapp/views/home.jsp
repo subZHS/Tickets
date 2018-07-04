@@ -30,8 +30,8 @@
                     <div class="mt-text animate-box slider-text">
                         <%--<span class="intro-text-small">Welcome to Tickets</span>--%>
                         <%--<h1>This website allows buying tickets to see shows.</h1>--%>
-                        <h1>Welcome to Tickets.</h1>
-                        <p style="font-size: 20px">This website allows buying tickets to see shows.</p>
+                        <h1 style="font-size: 50px;color: #b1ddf3">Welcome to <label style="color: #ffffff">Tickets</label>.</h1>
+                        <p style="font-size: 15px;color: #b1ddf3">一个专注于买票和卖票的网站</p>
                         <ul>
                             <li><a href="/login">去登录</a></li>
                         </ul>

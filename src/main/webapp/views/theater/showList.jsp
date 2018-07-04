@@ -68,7 +68,7 @@
                                     ArrayList<Show> showList=(ArrayList<Show>)request.getAttribute("showList");
                                     if(showList.size()==0){
                                 %>
-                                <h3 style="text-align: center">this kind of movie List is empty -_-</h3>
+                                <h3 id="noShowTip" style="text-align: center;font-weight: 500;font-size: 18px">您当前没有这种状态的演出 -_-</h3>
                                 <%}else{%>
                                 <table id="table-breakpoint-show">
                                     <thead>
@@ -136,6 +136,12 @@
         $("#myTab li").eq(4).addClass("active");
     }else if(showState=='Payed'){
         $("#myTab li").eq(5).addClass("active");
+    }
+</script>
+
+<script>
+    if($("#myTab li").eq(1).hasClass("active")){
+        $("#noShowTip").html("您还没有发布任何演出 -_- <a href='/theater/j"+theaterid+"/newShow' style='font-size: 18px' class='btn btn-link'>去发布演出</a>");
     }
 </script>
 </body>

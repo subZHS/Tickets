@@ -74,7 +74,7 @@
                         <%--<i style="font-size: 25px" class="fa fa-phone" aria-hidden="true"></i>--%>
                         电&emsp;&emsp;话
                     </label>
-                    <input name="phonenum" type="number" class="form-control" oninput="onInput()" value="${sessionScope.theater.phonenum}">
+                    <input name="phonenum" type="text" class="form-control" oninput="onInput()" value="${sessionScope.theater.phonenum}">
                 </div>
             </div>
             <div class="row form-group">

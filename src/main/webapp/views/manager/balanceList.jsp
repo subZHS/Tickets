@@ -54,7 +54,7 @@
                                 <%List<Balance> balanceList = (List<Balance>) request.getAttribute("balanceList");
                                     if(balanceList.size()==0){
                                 %>
-                                <h3 style="text-align: center">There are no this kind of balance list now -_-</h3>
+                                <h3 id="noBalanceTip" style="text-align: center;font-weight: 400;font-size: 20px">目前没有需要结算的演出 -_-</h3>
                                 <%}else{%>
                                 <table id="table-breakpoint">
                                     <thead>
@@ -128,6 +128,11 @@
     </div><!-- /.modal-dialog -->
 </div>
 
+<script>
+    if($("#myTab li").eq(2).hasClass("active")){
+        $("#noBalanceTip").html("没有已经结算的演出 -_-");
+    }
+</script>
 <script type="text/javascript">
     var payIndex;
     function payBalance() {

@@ -33,7 +33,7 @@
         <%
             List<Show> showList = (List<Show>)request.getAttribute("showList");
             if(showList.size()==0){%>
-        <h3 style="text-align: center">Sorry, cannot search relative shows -_-</h3>
+        <h3 style="text-align: center;font-weight: 400;font-size: 20px">对不起，搜索不到该关键词相关的演出 -_-</h3>
         <%}else{
             List<String> showTypeList=(List<String>)request.getAttribute("showTypeList");
 //            List<Integer> orderNumList=(List<Integer>)request.getAttribute("orderNumList");
@@ -67,7 +67,7 @@
 </div>
 
 <br/>
-<div class="bottom_text"><span>搜索到的影院</span></div>
+<div class="bottom_text"><span>搜索到的场馆</span></div>
 
 <!-- latest blog start -->
 <div class="latest-blog-area">
@@ -76,7 +76,7 @@
             <div class="latest-blog-slider">
                 <%List<Theater> theaterList = (List<Theater>)request.getAttribute("theaterList");
                     if(theaterList.size()==0){%>
-                <h3 style="text-align: center">Sorry, cannot search relative theaters -_-</h3>
+                <h3 style="text-align: center;font-weight: 400;font-size: 20px">对不起，搜索不到该关键词相关的场馆 -_-</h3>
                 <%}else{
                     for(int i=0;i<theaterList.size();i++){
                         Theater theater = theaterList.get(i);

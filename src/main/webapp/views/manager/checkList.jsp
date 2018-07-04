@@ -60,9 +60,9 @@
                                     }
                                     if(request.getParameter("checkType").equals("signUpTheater")&&theaterList.size()==0){
                                 %>
-                                <h3 style="text-align: center">There are no signup theater to check -_-</h3>
+                                <h3 style="text-align: center;font-weight: 400;font-size: 20px">目前没有待审核的场馆注册记录 -_-</h3>
                                 <%}else if(request.getParameter("checkType").equals("modifyTheater")&&theaterModifyList.size()==0){%>
-                                <h3 style="text-align: center">There are no theater modify to check -_-</h3>
+                                <h3 style="text-align: center;font-weight: 400;font-size: 20px">目前没有待审核的场馆信息修改记录 -_-</h3>
                                 <%}else{%>
                                 <table id="table-breakpoint">
                                     <thead>

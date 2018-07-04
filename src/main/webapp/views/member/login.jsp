@@ -47,7 +47,7 @@
                     <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
                         <h1 style="font-family: georgia;">Welcome to <span style="color: cornflowerblue">Tickets</span></h1>
                         <p></p>
-                        <span class="intro-text-small">This website allows buying tickets to see shows.</span>
+                        <span class="intro-text-small">一个专注于买票和卖票的网站.</span>
                     </div>
                     <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                         <div class="form-wrap">
@@ -85,7 +85,7 @@
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col-md-12">
-                                                    <input type="submit" class="btn btn-primary" value="Login">
+                                                    <input type="submit" class="btn btn-primary" value="登录">
                                                 </div>
                                             </div>
                                         </form>
