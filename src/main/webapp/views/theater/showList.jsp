@@ -70,7 +70,7 @@
                                 %>
                                 <h3 id="noShowTip" style="text-align: center;font-weight: 500;font-size: 18px">您当前没有这种状态的演出 -_-</h3>
                                 <%}else{%>
-                                <table id="table-breakpoint-show">
+                                <table id="table-breakpoint" class="table-breakpoint-show">
                                     <thead>
                                     <tr style="text-align: center">
                                         <th>演出</th>

@@ -348,30 +348,33 @@ table.bt tbody td .bt-content {
 }
 
 /*------------------------------table-breakpoint-order-------------------------------------*/
-#table-breakpoint-order {
+.table-breakpoint-order {
     width: 900px;
 }
-#table-breakpoint-order table tr th:first-child,table tr td:first-child{width:340px;}
-#table-breakpoint-order table tr th:nth-child(2),table tr td:nth-child(2){width:110px}
-#table-breakpoint-order table tr th:nth-child(3),table tr td:nth-child(3){width:90px}
-#table-breakpoint-order table tr th:nth-child(4),table tr td:nth-child(4){width:70px}
-#table-breakpoint-order table tr th:nth-child(5),table tr td:nth-child(5){}
-#table-breakpoint-order table tr th:nth-child(6),table tr td:nth-child(6){}
-#table-breakpoint-order table tr th:nth-child(7),table tr td:nth-child(7){width:65px}
-#table-breakpoint-order table tr th:last-child,table tr td:last-child{width:95px}
+.table-breakpoint-order table tr th:first-child,table tr td:first-child{width:340px;}
+.table-breakpoint-order table tr th:nth-child(2),table tr td:nth-child(2){width:110px}
+.table-breakpoint-order table tr th:nth-child(3),table tr td:nth-child(3){width:90px}
+.table-breakpoint-order table tr th:nth-child(4),table tr td:nth-child(4){width:70px}
+.table-breakpoint-order table tr th:nth-child(5),table tr td:nth-child(5){}
+.table-breakpoint-order table tr th:nth-child(6),table tr td:nth-child(6){}
+.table-breakpoint-order table tr th:nth-child(7),table tr td:nth-child(7){width:65px}
+.table-breakpoint-order table tr th:last-child,table tr td:last-child{width:95px}
 /*------------------------------table-breakpoint-order-------------------------------------*/
 
 
 
 
-    /*------------------------------table-breakpoint-show-------------------------------------*/
-/*#table-breakpoint-show {*/
-    /*width: 900px;*/
-/*}*/
-#table-breakpoint-show table tr th:first-child,table tr td:first-child{width:150px;}
-#table-breakpoint-show table tr th:nth-child(2),table tr td:nth-child(2){width:90px}
-#table-breakpoint-show table tr th:nth-child(3),table tr td:nth-child(3){width:110px}
-#table-breakpoint-show table tr th:nth-child(4),table tr td:nth-child(4){width:250px}
-#table-breakpoint-show table tr th:nth-child(5),table tr td:nth-child(5){width:100px}
-#table-breakpoint-show table tr th:last-child,table tr td:last-child{width:95px}
-/*------------------------------table-breakpoint-------------------------------------*/
+/*------------------------------table-breakpoint-show-------------------------------------*/
+.table-breakpoint-show table tr th:first-child,table tr td:first-child{width:150px;}
+.table-breakpoint-show table tr th:nth-child(2),table tr td:nth-child(2){width:90px}
+.table-breakpoint-show table tr th:nth-child(3),table tr td:nth-child(3){width:110px}
+.table-breakpoint-show table tr th:nth-child(4),table tr td:nth-child(4){width:250px}
+.table-breakpoint-show table tr th:nth-child(5),table tr td:nth-child(5){width:100px}
+.table-breakpoint-show table tr th:last-child,table tr td:last-child{width:95px}
+/*------------------------------table-breakpoint-show-------------------------------------*/
+
+
+
+/*------------------------------table-breakpoint-orderDetail-------------------------------------*/
+.table-breakpoint-show table tr th:first-child,table tr td:first-child{width:280px;}
+/*------------------------------table-breakpoint-orderDetail-------------------------------------*/

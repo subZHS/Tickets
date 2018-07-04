@@ -69,7 +69,7 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
                         <div class="w3ls-news-result">
                             <h4>下单时间：<%=sdf.format(order.getTime())%>&nbsp;&nbsp; 订单号：<span style="color: #C9302C">${order.orderid}</span></h4>
                         </div>
-                        <table id="table-breakpoint">
+                        <table id="table-breakpoint" class="table-breakpoint-orderDetail">
                             <thead>
                             <tr>
                                 <th>订单信息</th>
@@ -84,7 +84,7 @@ if(OrderState.values()[order.getState()]==OrderState.WaitCheck){%>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="/publish/theater/j${theaterId}/show/j${show.showid}#show_part"><img src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt="" />
+                                <td style="text-align: left"><a href="/publish/theater/j${theaterId}/show/j${show.showid}#show_part"><img src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt="" />
                                     <h5 style="margin-top: 20px">${show.title}</h5></a>
                                     <a href="/publish/theater/j${theaterId}" class="btn btn-link" style="padding: 0">${theaterName}</a><br/>
                                     <span>${showTimeStr}</span>

@@ -49,7 +49,7 @@
 
 <div class="w3_content_agilleinfo_inner row" style="border-top: none">
     <div class="alert alert-danger">
-        <span class="col-md-offset-1 col-md-5">○ &nbsp;请在15分钟内完成支付，超时订单会自动取消，现在还剩下</span>
+        <span class="col-md-offset-1 col-md-5">○ &nbsp;请在5分钟内完成支付，超时订单会自动取消，现在还剩下</span>
         <div class="warp">
             <img src="/resources/images/time.png" style="height: 60px"/>
             <strong class="a">111</strong>分 <strong class="b"></strong>秒
@@ -74,7 +74,7 @@
                             <h4>下单时间：<%=sdf.format(order.getTime())%>&nbsp;&nbsp; 订单号：<label
                                     style="color: #C9302C">${order.orderid}</label></h4>
                         </div>
-                        <table id="table-breakpoint">
+                        <table id="table-breakpoint" class="table-breakpoint-orderDetail">
                             <thead>
                             <tr>
                                 <th>订单信息</th>
@@ -88,7 +88,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="/public/theater/j${theaterId}/show/j${show.showid}"><img
+                                <td style="text-align: left"><a href="/public/theater/j${theaterId}/show/j${show.showid}"><img
                                         src="${show.image}" style="width:90px;float:left;margin-right: 10px" alt=""/>
                                     <h5 style="margin-top: 20px">${show.title}</h5></a>
                                     <a href="/public/theater/j${theaterId}" class="btn btn-link"

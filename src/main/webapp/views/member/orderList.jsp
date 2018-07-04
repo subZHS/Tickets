@@ -74,7 +74,7 @@
                                 %>
                                 <h3 id="noOrderTip" style="text-align: center;font-weight: 500;font-size: 18px">您当前没有这种状态的订单 -_-</h3>
                                 <%}else{%>
-                                <table id="table-breakpoint-order">
+                                <table id="table-breakpoint" class="table-breakpoint-order">
                                     <thead>
                                     <tr>
                                         <%--将"下单时间"放到后面--%>
@@ -185,6 +185,7 @@
     var refundOrderIndex;
     function refundOrder() {
         var orderid=$(".orderid").eq(refundOrderIndex).text();
+        // alert(refundOrderIndex);
         $.ajax({
             type: 'post', url: '/member/j${sessionScope.member.memberid}/order/j'+orderid+'/refundOrder',
             data: {},
