@@ -1,2 +1,2 @@
 # Tickets
-# a J2EE project
+# 人机交互本科课程项目
